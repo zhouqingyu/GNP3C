@@ -1,0 +1,21 @@
+Downloading the VM Image
+------------------------
+In order to keep the PF_RING distribution reasonably small, we have uploaded
+the VM image on sourceforge at http://sourceforge.net/projects/ntop/files/PF_RING/vPF_RING/
+
+Please unzip VM images prior to use them.
+
+
+Utility Scripts
+---------------
+This directory contains some utility scripts:
+
+- if-up.sh
+  Utility script used by start-vm.sh (see below).
+
+- load-kvm.sh
+  Load kernel modules and setup bridge interfaces. Please execute this
+  script *before* starting any QEMU VM.  
+
+- start-vm.sh
+  Example script for loading a VM with network connectivity.

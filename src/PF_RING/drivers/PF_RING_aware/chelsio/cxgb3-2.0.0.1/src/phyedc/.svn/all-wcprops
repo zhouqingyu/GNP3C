@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/phyedc
+END
+ael2005_opt_edc.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/phyedc/ael2005_opt_edc.bin
+END
+ael2005_twx_edc.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/phyedc/ael2005_twx_edc.bin
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/phyedc/Makefile
+END
+ael2020_twx_edc.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/phyedc/ael2020_twx_edc.bin
+END

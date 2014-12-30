@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware
+END
+myri10ge_mcp.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/myri10ge_mcp.h
+END
+rss_eth_z8e.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/rss_eth_z8e.h
+END
+rss_ethp_z8e.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/rss_ethp_z8e.h
+END
+rss_eth_z8e.dat
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/rss_eth_z8e.dat
+END
+rss_ethp_z8e.dat
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/rss_ethp_z8e.dat
+END
+mcp_gen_header.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/mcp_gen_header.h
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/CHANGES
+END
+eth_z8e.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/eth_z8e.h
+END
+ethp_z8e.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/ethp_z8e.h
+END
+eth_z8e.dat
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/eth_z8e.dat
+END
+ethp_z8e.dat
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/firmware/ethp_z8e.dat
+END

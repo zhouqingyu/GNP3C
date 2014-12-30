@@ -1,0 +1,331 @@
+.\" Copyright (c) 2007-2011 Broadcom Corporation
+.\" This is free documentation; you can redistribute it and/or
+.\" modify it under the terms of the GNU General Public License as
+.\" published by the Free Software Foundation.
+.\"
+.\" bnx2x.4,v 1.0
+.\"
+.TH BNX2X 4 "11/29/07" "Broadcom Corporation"
+.\"
+.\" NAME part
+.\"
+.SH NAME
+bnx2x \- Broadcom NetXtreme II BCM57710/BCM57711/BCM57711E/BCM57712/BCM57712_MF/
+BCM57800/BCM57800_MF/BCM57810/BCM57810_MF/BCM57840/BCM57840_MF 10Gb PCIE 
+Ethernet Network Controllers and Broadcom NetXtreme II BCM57840 10Gb/20Gb PCIE
+Ethernet Network Controllers.
+.\"
+.\" SYNOPSIS part
+.\"
+.SH SYNOPSIS
+.B insmod bnx2x.ko 
+.RB [int_mode=1]\c
+.br
+.B insmod bnx2x.ko
+.RB [int_mode=2]\c
+.br
+.B insmod bnx2x.ko
+.RB [disable_tpa=1]\c
+.br
+.B insmod bnx2x.ko
+.RB [pri_map=0x22110000]\c
+.br
+.B insmod bnx2x.ko
+.RB [dropless_fc=1]\c
+.br
+.B insmod bnx2x.ko
+.RB [autogreeen=2]\c
+.PP
+.B modprobe bnx2x
+.RB [int_mode=1]\c
+.br
+.B modprobe bnx2x
+.RB [int_mode=2]\c
+.br
+.B modprobe bnx2x
+.RB [disable_tpa=1]\c
+.br
+.B modprobe bnx2x
+.RB [pri_map=0x22110000]\c
+.br
+.B modprobe bnx2x
+.RB [dropless_fc=1\c]
+.br
+.B modprobe bnx2x
+.RB [autogreeen=2]\c
+.\"
+.\" DESCRIPTION part
+.\"
+.SH DESCRIPTION
+.I bnx2x
+is the network device driver for the Broadcom
+.B NetXtreme II BCM5771x/BCM578xx
+series PCIE 10/20-Gigabit Ethernet Network Interface Card (NIC). The driver has
+been tested on 2.6.x kernels starting from 2.6.9.
+.PP
+Refer to the README.TXT from the driver package on how to
+compile and install the driver.
+.PP
+Refer to various Linux documentations
+on how to configure network protocol and address.
+.\"
+.\" DRIVER DEPENDENCIES part
+.\"
+.SH DRIVER DEPENDENCIES
+The driver uses library functions in the crc32 and zlib_inflate libraries.
+On most kernels, these libraries are already built into the kernel. In
+some cases, it may be necessary to load these library modules before the
+driver or unresolved symbol errors will appear. Using modprobe will
+resolve the dependencies automatically.
+
+In rare cases where the crc32 and zlib_inflate libraries are not enabled
+in the kernel, it will be necessary to compile the kernel again with the
+libraries enabled.
+
+The driver uses also library functions in the crc32c library. On new kernels,
+this library is already built into the kernel. In some old kernels,
+it may be necessary to load this library module before the driver or
+unresolved symbol errors will appear. Using modprobe will resolve the
+dependencies automatically.
+
+On systems where GRO feature is available, driver uses functions from 8021q
+library. In some kernels this library is already built into the kernel, in
+others it may be necessary to load this library module before the driver or
+unresolved symbol errors will appear. Using modprobe will resolve the
+dependencies automatically.
+
+.\"
+.\" DRIVER SETTINGS part
+.\"
+.SH DRIVER SETTINGS
+The bnx2x driver settings can be queried and changed using \fBethtool\fP.
+The latest ethtool can be downloaded from
+\fBhttp://sourceforge.net/projects/gkernel\fP if it is not already installed.
+See the ethtool man page for more information. ethtool settings
+do not persist across reboot or module reload. The ethtool commands can be
+put in a startup script such as /etc/rc.local to preserve the settings
+across a reboot. On Red Hat distributions, "ethtool -s" parameters can be
+specified in the ifcfg-ethx scripts using the ETHTOOL_OPTS keyword. The
+specified ethtool parameters will be set during ifup. Example:
+/etc/sysconfig/network-scripts/ifcfg-eth0:
+
+ETHTOOL_OPTS="wol g speed 100 duplex half autoneg off"
+
+.\"
+.\" PARAMETER part
+.\"
+.SH PARAMETERS
+Several optional parameters can be supplied as a command line argument
+to the insmod or modprobe command. These parameters can also be set in
+modprobe.conf. See the man page for more information.
+.PP
+The optional parameter \fBint_mode\fP is used to force using an interrupt mode
+other than MSI-X. By default, the driver will try to enable MSI-X if it is
+supported by the kernel. In case MSI-X is not attainable, the driver will try
+to enable MSI if it is supported by the kernel. In case MSI is not attainable,
+the driver will use legacy INTx mode. In some old kernels, it's impossible to
+use MSI if device has used MSI-X before and impossible to use MSI-X if device
+has used MSI before, in these cases system reboot in between is required.
+.PP
+Set the \fBint_mode\fP parameter to 1 as shown below to force using the legacy
+INTx mode on all NetXtreme II NICs in the system.
+.PP
+insmod bnx2x.ko int_mode=1
+.PP
+or
+.PP
+modprobe bnx2x int_mode=1
+.PP
+Set the \fBint_mode\fP parameter to 2 as shown below to force using MSI mode
+on all NetXtreme II NICs in the system.
+.PP
+insmod bnx2x.ko int_mode=2
+.PP
+or
+.PP
+modprobe bnx2x int_mode=2
+.PP
+The optional parameter \fBdisable_tpa\fP can be used to disable the
+Transparent Packet Aggregation (TPA) feature. By default, the driver will
+aggregate TCP packets, but if a user would like to disable this advanced
+feature - it can be done.
+.PP
+Set the \fBdisable_tpa\fP parameter to 1 as shown below to disable the TPA
+feature on all NetXtreme II NICs in the system.
+.PP
+insmod bnx2x.ko disable_tpa=1
+.PP
+or
+.PP
+modprobe bnx2x disable_tpa=1
+.PP
+Use ethtool (if available) to disable TPA (LRO) for a specific NetXtreme II NIC.
+.PP
+The optional parameter \fBpri_map\fP is used to map the skb-priority to a Class
+Of Service (CoS) in the HW. This 32 bit parameter is evaluated by the driver 
+as 8 values of 4 bits each. Each nibble sets the desired HW queue number for 
+that priority.
+.PP
+This parameter is only available in kernels which support mapping skb priorities
+to traffic classes and traffic classes to transmission queues. This means kernel
+2.6.39 or newer.
+.br
+Also:
+.br
+on the 5771x family this feature is unavailable (a single COS services all).
+.br
+on the 57712 family two classes of service are available.
+.br
+on the 578xx family three classes of service are availabe.
+.br
+configuring priorities to unavailable COSs will log an error and default to 
+COS 0.
+.br
+
+.PP
+For example, set the \fBpri_map\fP parameter to 0x22221100 to map priority 0
+and 1 to CoS 0, map priority 2 and 3 to CoS 1, and map priority 4 to 7 to CoS 2.
+Another example, set the \fBpri_map\fP parameter to 0x11110000 to map priority
+0 to 3 to CoS 0, and map priority 4 to 7 to CoS 1.
+.PP
+The optional parameter \fBdropless_fc\fP can be used to enable a complementary
+flow control mechanism on 57711 or 57711E. The default flow control mechanism
+is to send pause frames when the on chip buffer (BRB) is reaching a certain
+level of occupancy. This is a performance targeted flow control mechanism.
+On 57711 or 57711E, one can enable another flow control mechanism to send pause
+frames in case where one of the host buffers (when in RSS mode) are exhausted.
+This is a "zero packet drop" targeted flow control mechanism.
+.PP
+Set the \fBdropless_fc\fP parameter to 1 as shown below to enable the dropless
+flow control mechanism feature on all 57711 or 57711E NetXtreme II NICs in the
+system.
+.PP
+insmod bnx2x.ko dropless_fc=1
+.PP
+or
+.PP
+modprobe bnx2x dropless_fc=1
+.PP
+The optional parameter \fBautogreeen\fP can be used to force specific AutoGrEEEN
+behavior. By default, the driver will use the nvram settings per port, but if
+the module parameter is set, it can override the nvram settings to force
+AutoGrEEEN to either active (1) or inactive (2). The default value of 0 to use
+the nvram settings.
+.PP
+There are some more optional parameters that can be supplied as a command line
+argument to the insmod or modprobe command. These optional parameters are
+mainly to be used for debug and may be used only by an expert user.
+.PP
+The debug optional parameter \fBpoll\fP can be used for timer based polling.
+Set the \fBpoll\fP parameter to the timer polling interval on all NetXtreme
+II NICs in the system.
+.PP
+The debug optional parameter \fBmrrs\fP can be used to override the MRRS
+(Maximum Read Request Size) value of the HW. Set the \fBmrrs\fP parameter to
+the desired value (0..3) for on all NetXtreme II NICs in the system.
+.PP
+The debug optional parameter \fBdebug\fP can be used to set the default
+msglevel on all NetXtreme II NICs in the system. Use \fBethtool -s\fP to set
+the msglevel for a specific NetXtreme II NIC.
+.PP
+.\"
+.\" DEFAULT SETTINGS part
+.\"
+.SH DEFAULT SETTINGS
+.TP
+Speed :
+Autonegotiation with all speeds advertised
+.TP
+Flow control :
+Autonegotiation with rx and tx advertised
+.TP
+MTU :
+1500 (range 46 - 9000)
+.TP
+Rx Ring size :
+4078 (range 0 - 4078)
+.TP
+Tx Ring size :
+4078 (range (MAX_SKB_FRAGS+4) - 4078)
+
+MAX_SKB_FRAGS varies on different kernels and
+different architectures. On a 2.6 kernel for
+x86, MAX_SKB_FRAGS is 18.
+.TP
+Coalesce rx usecs :
+25 (range 0 - 3000)
+.TP
+Coalesce tx usecs :
+50 (range 0 - 12288)
+.TP
+MSI-X :
+Enabled (if supported by 2.6 kernel)
+.TP
+TSO :
+Enabled
+.TP
+WoL :
+Disabled
+.\"
+.\" DUAL MEDIA SUPPORT part
+.\"
+.SH DUAL MEDIA SUPPORT
+A dual media capable system connects two PHYs to a single MAC. These PHYs
+generally use different media types (for example SFP+ fiber and 10GBase-T
+twisted pair copper) and the dual media configuration requires that the user
+select a preference among the two PHYs. Supported preferences include manual
+selection and PHY priority selection. With manual selection, the user specifies
+that only one PHY should be configured and use to connect to the network. (For
+example, use the fiber PHY only, always ignore the copper PHY.) With PHY
+priority selection, the user specifies that either PHY may be used to connect
+to the network, but when both PHYs indicate link, the PHY with the higher
+priority will be used to connect to the network. (For example, with fiber PHY
+priority, if either the copper PHY or the fiber PHY has link, that PHY will be
+used to connect to the network. However, if both the fiber and copper PHYs have
+link, the fiber PHY will be used to connect to the network and the copper PHY
+will be ignored.) When PHY priority selection is used, the PHY which has been
+selected for network connectivity is referred to as the active PHY. When PHY
+manual selection is used, there are no special considerations when running
+ethtool since only one media type is used by the MAC and ethtool is able to
+control that media type as expected. However, since ethtool is currently not
+designed to manage the multiple physical interfaces enabled by Dual Media
+support,  the following limitations will apply when ethtool is used on a system
+with PHY priority selection enabled:
+
+1. Ethtool can be used to display the current physical media information for
+the active PHY.
+
+2. Ethtool cannot be used to determine whether PHY manual selection or PHY
+priority selection is in use. This configuration information is available
+through system specific utilities provided by the vendor.
+
+3. Ethtool can be used to control the current  physical media configuration,
+but this will force the configuration back to PHY manual selection.
+
+4. When ethtool is used to configure the active PHY, ethtool must be called
+twice, first to change AWAY from the active PHY, then to change BACK to the
+active PHY. (For example, if the active PHY is copper, ethtool must be first
+called to change the active PHY to fiber, forcing PHY manual selection
+to be enabled, then ethtool must be called again to change the active PHY
+to copper.)
+
+5. Using ethtool to change from PHY priority selection to PHY manual selection
+only applies to the current session. When the driver is unloaded/reloaded or
+the system is rebooted, PHY selection will return to the default value.
+PHY selection defaults must be set outside of Linux with system specific
+utilities provided by the vendor.
+
+.\"
+.\" AUTHOR part
+.\"
+.SH AUTHOR
+Eliezer Tamir \- eliezert@broadcom.com
+.\"
+.\" SEE ALSO part
+.\"
+.SH SEE ALSO
+.BR ifconfig (8),
+.BR insmod (8),
+.BR modprobe.conf (5),
+.BR ethtool (8).
+

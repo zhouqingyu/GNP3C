@@ -1,0 +1,12 @@
+packet_queue_size:50000;
+tcp_connection_number:4096;
+database_ip:127.0.0.1;
+database_account:root;
+database_password:123456;
+database_name:network_monitor;
+monitor_cars:eth0;
+save_environment_path:/var/log/save/;
+recover_environment_path:/var/log/recover/;
+tcp_data_wait_max:3;
+tcp_delay_max_time:3;
+time_wait_unit:1;

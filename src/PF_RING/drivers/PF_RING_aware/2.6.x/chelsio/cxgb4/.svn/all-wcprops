@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4
+END
+t4_tcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4_tcb.h
+END
+adapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/adapter.h
+END
+t4_hw.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4_hw.c
+END
+cxgbtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/cxgbtool.h
+END
+t4vf_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4vf_defs.h
+END
+t4_hw.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4_hw.h
+END
+t4_regs_values.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4_regs_values.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/Makefile
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/common.h
+END
+trace.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/trace.c
+END
+l2t.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/l2t.c
+END
+t4_msg.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4_msg.h
+END
+trace.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/trace.h
+END
+l2t.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/l2t.h
+END
+t4fw_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4fw_interface.h
+END
+cxgb4_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/cxgb4_main.c
+END
+t4_regs.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/t4_regs.h
+END
+sge.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/sge.c
+END
+cxgb4_ctl_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/cxgb4_ctl_defs.h
+END
+cxgb4_compat.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/cxgb4_compat.h
+END
+osdep.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/osdep.h
+END
+cxgb4_ofld.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/chelsio/cxgb4/cxgb4_ofld.h
+END

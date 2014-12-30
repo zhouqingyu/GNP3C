@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/packaging
+END
+pcap.spec.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/packaging/pcap.spec.in
+END

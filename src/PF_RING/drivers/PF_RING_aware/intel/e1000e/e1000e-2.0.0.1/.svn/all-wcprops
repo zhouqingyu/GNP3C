@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/README
+END
+e1000e.7
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/e1000e.7
+END
+pci.updates
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/pci.updates
+END
+e1000e.spec
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/e1000e.spec
+END
+SUMS
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/SUMS
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/COPYING
+END

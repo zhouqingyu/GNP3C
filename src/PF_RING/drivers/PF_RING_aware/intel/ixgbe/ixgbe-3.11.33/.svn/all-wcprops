@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33
+END
+ixgbe.7
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/ixgbe.7
+END
+SUMS
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/SUMS
+END
+ixgbe.spec
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/ixgbe.spec
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/COPYING
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/README
+END
+pci.updates
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/pci.updates
+END

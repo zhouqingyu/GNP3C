@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1
+END
+RELEASE
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/RELEASE
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/LICENSE
+END
+pf_ring.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/pf_ring.txt
+END

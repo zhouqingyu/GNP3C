@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include
+END
+cxgb3_offload.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/cxgb3_offload.h
+END
+firmware_exports.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/firmware_exports.h
+END
+l2t.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/l2t.h
+END
+t3_cpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/t3_cpl.h
+END
+cxgb3_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/cxgb3_defs.h
+END
+t3cdev.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/t3cdev.h
+END
+tcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/tcb.h
+END
+cxgb3_ctl_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/cxgb3_ctl_defs.h
+END

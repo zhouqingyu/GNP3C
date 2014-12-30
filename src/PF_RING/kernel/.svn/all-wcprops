@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ntop/!svn/ver/6902/trunk/PF_RING/kernel
+END
+pf_ring.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ntop/!svn/ver/6902/trunk/PF_RING/kernel/pf_ring.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ntop/!svn/ver/5533/trunk/PF_RING/kernel/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ntop/!svn/ver/5089/trunk/PF_RING/kernel/README
+END

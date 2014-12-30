@@ -1,0 +1,138 @@
+#! /bin/bash
+#
+# (C) 2003-13 - ntop.org
+#
+### BEGIN INIT INFO
+# Provides:          pf_ring
+# Required-Start:    $local_fs $remote_fs $network $syslog
+# Required-Stop:     $n2disk $nprobe
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start/stop pf_ring
+### END INIT INFO
+
+MGMG_INTERFACE_DRIVER="$(/sbin/ethtool -i eth0 | grep driver | cut -d ' ' -f 2)"
+
+start_pf_ring() {
+    KERNEL_VERSION=$(uname -r)
+
+    PFRING_CONFIG="/etc/pf_ring/pfring.conf"
+    PARAM=""
+    if [ -f $PFRING_CONFIG ]; then
+        PARAM="$(cat $PFRING_CONFIG)"
+    fi
+
+    PF_RING_MOD="/lib/modules/$KERNEL_VERSION/kernel/net/pf_ring/pf_ring.ko"
+    PF_RING_MOD_LOCAL="/usr/local/pfring/kernel/pf_ring.ko"
+
+    if [ -f $PF_RING_MOD ]; then
+        /sbin/insmod $PF_RING_MOD $PARAM
+    else
+        /sbin/insmod $PF_RING_MOD_LOCAL $PARAM
+    fi
+
+    DNA_DRIVERS_DIR="/usr/local/pfring/drivers/DNA"
+
+    if [ -d $DNA_DRIVERS_DIR ]; then
+        DNA_DRIVERS="$(/bin/ls $DNA_DRIVERS_DIR|cut -d '.' -f 1)"
+
+        for D in $DNA_DRIVERS ; do
+	    DRIVER_CONFIG="/etc/pf_ring/dna-$D.conf"
+	    if [ -f $DRIVER_CONFIG ]; then
+	        ADAPTERS_LISTED="$(grep adapters_to_enable $DRIVER_CONFIG|wc -l)"
+	        if [ "$D" == "$MGMG_INTERFACE_DRIVER" ] && [ $ADAPTERS_LISTED -eq 0 ]; then
+		    echo "Unable to replace $D as it is used by the management interface"
+	        else
+		    PARAM="$(cat $DRIVER_CONFIG)"
+ 	            # Remove the driver first as the original vanilla driver might be the one we want to overwrite	    
+		    NUM="$(grep $D /proc/modules|wc -l)"
+		    if [ $NUM -gt 0 ]; then
+		        /sbin/rmmod $D
+		    fi
+		    /sbin/insmod $DNA_DRIVERS_DIR/$D.ko $PARAM
+	        fi
+	    fi
+        done
+    else
+        echo "DNA drivers not found in the expected path"
+    fi
+
+    sleep 1
+
+    # /sbin/ifup -a
+    
+    # Enable all interfaces DNA and non DNA
+    INTERFACES="$(cat /proc/net/dev | grep ':' | cut -d ':' -f 1|grep -v 'lo' | tr -d '\n' | sed 's/^  //'| sed 's/  / /')"
+    for D in $INTERFACES ; do
+	/sbin/ifconfig $D up
+    done
+}
+
+
+stop_pf_ring() {
+    if [ -f /etc/init.d/nprobe ]; then
+	/etc/init.d/nprobe stop
+	sleep 2
+    fi
+
+    if [ -f /etc/init.d/n2disk ]; then
+	/etc/init.d/n2disk stop
+	sleep 2
+    fi
+
+    if [ -f /etc/init.d/ntop ]; then
+	/etc/init.d/ntop stop
+	sleep 2
+    fi
+
+    if [ -f /etc/init.d/ntopng ]; then
+	/etc/init.d/ntopng stop
+	sleep 2
+    fi
+
+    DNA_DRIVERS="$(/bin/ls /usr/local/pfring/drivers/DNA/|cut -d '.' -f 1)"
+    for D in $DNA_DRIVERS ; do
+	DRIVER_CONFIG="/etc/pf_ring/dna-$D.conf"
+	if [ -f $DRIVER_CONFIG ]; then
+	    NUM="$(grep $D /proc/modules |wc -l)"
+	    if [ $NUM -gt 0 ]; then
+	        ADAPTERS_LISTED="$(grep adapters_to_enable $DRIVER_CONFIG|wc -l)"
+	        if [ "$D" == "$MGMG_INTERFACE_DRIVER" ] && [ $ADAPTERS_LISTED -eq 0 ]; then
+		    echo "Unable to replace $D as it is used by the management interface"
+		else
+		    /sbin/rmmod $D
+		fi
+	    fi
+	fi
+    done
+
+    NUM="$(grep pf_ring /proc/modules|wc -l)"
+    if [ $NUM -gt 0 ]; then
+	/sbin/rmmod pf_ring
+    fi
+}
+
+########
+
+INTERFACE_NAME=$2
+
+case "$1" in
+  start)
+	start_pf_ring;
+	;;
+
+  stop)
+       	stop_pf_ring;
+	;;
+
+  restart)
+        stop_pf_ring;
+	start_pf_ring;
+	;;
+
+  *)
+	echo "Usage: /etc/init.d/pf_ring {start|stop|restart}"
+	exit 1
+esac
+
+exit 0

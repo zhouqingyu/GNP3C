@@ -1,0 +1,15 @@
+## PF_RING-aware Chelsio T3 driver - cxgb3
+## Modified by Dylan Merida (dylan.merida@gmail.com)
+#
+
+# The main cxgb3 driver has been modified to be PF_RING aware. The package does not include hardware offloading (TOE) or bonding. Offloading is known to cause issues with some cards and capturing SPAN traffic with tools like wireshark, Snort, Suricata, and Bro-IDS. Therefore, it's best to leave TOE disabled.
+
+# Please follow these steps to install
+
+# Make sure this doesn't affect your managment card/driver
+rmmod cxgb3
+
+cd src
+make nic
+make nic install
+modprobe cxgb3

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include
+END
+cdecl_ext.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/cdecl_ext.h
+END
+inetprivate.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/inetprivate.h
+END
+Gnuc.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/Gnuc.h
+END
+bittypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/bittypes.h
+END
+sockstorage.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/sockstorage.h
+END
+addrinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/addrinfo.h
+END
+ip6_misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Include/ip6_misc.h
+END

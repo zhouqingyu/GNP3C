@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/net
+END
+offload.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/include/net/offload.h
+END

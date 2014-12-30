@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/src/.tmp_versions
+END
+cnic.mod
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/src/.tmp_versions/cnic.mod
+END
+bnx2.mod
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/src/.tmp_versions/bnx2.mod
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ntop/!svn/ver/6906/trunk/PF_RING/package/ubuntu
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ntop/!svn/ver/5851/trunk/PF_RING/package/ubuntu/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ntop/!svn/ver/6906/trunk/PF_RING/package/ubuntu/Makefile.in
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ntop/!svn/ver/5851/trunk/PF_RING/package/ubuntu/configure.in
+END

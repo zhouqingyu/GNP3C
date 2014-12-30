@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/prj
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/prj/GNUmakefile
+END
+WinDump.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/prj/WinDump.dsp
+END
+WinDump.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/prj/WinDump.dsw
+END

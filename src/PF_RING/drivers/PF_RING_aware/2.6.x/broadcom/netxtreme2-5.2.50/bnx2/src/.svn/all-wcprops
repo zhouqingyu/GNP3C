@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/Makefile
+END
+bnx2_fw2.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/bnx2_fw2.h
+END
+cnic.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/cnic.c
+END
+bnx2.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/bnx2.h
+END
+cnic_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/cnic_if.h
+END
+cnic.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/cnic.h
+END
+cnic_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/cnic_defs.h
+END
+bnx2.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/bnx2.c
+END
+bnx2.4
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/bnx2.4
+END
+bnx2_fw.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2-2.0.8b/src/bnx2_fw.h
+END

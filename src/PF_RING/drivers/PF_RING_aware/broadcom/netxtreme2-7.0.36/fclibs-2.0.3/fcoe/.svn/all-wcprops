@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/fclibs-2.0.3/fcoe
+END
+fcoe_ctlr.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/fclibs-2.0.3/fcoe/fcoe_ctlr.c
+END
+fcoe_transport.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/fclibs-2.0.3/fcoe/fcoe_transport.c
+END
+libfcoe2.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/fclibs-2.0.3/fcoe/libfcoe2.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/fclibs-2.0.3/fcoe/Makefile
+END

@@ -1,0 +1,189 @@
+                          ============================
+                           R E L E A S E    N O T E S
+                          ============================
+
+                  Broadcom NetXtreme II LIBFC/LIBFCOE modules
+                            	For Linux
+
+                  Copyright (c) 2010-2011 Broadcom Corporation
+                              All rights reserved.
+
+Version 2.0.3 (Aug 30, 2011)
+============================
+
+  Fixes
+  =====
+	libfc: fix referencing to fc_fcp_pkt from the frame pointer via fr_fsp()
+
+Version 2.0.2 (Aug 19, 2011)
+============================
+
+  Fixes
+  =====
+	libfc: Rename conflicting symbols with upstream libfc
+
+Version 2.0.1 (Aug 1, 2011)
+============================
+
+  Fixes
+  =====
+        libfc/libfcoe: Support SLES 11 SP1 Errata kernel
+
+Version 2.0.0 (Jun 10, 2011)
+============================
+
+  Fixes
+  =====
+        libfc/libfcoe: Remove support for out-of-box libfc2/libfcoe2
+
+Version 1.2.3 (May 04, 2011)
+============================
+
+  Fixes
+  =====
+	libfc:  Fix Cont00055266 - System looses some LUNS after rapid link flap test with NPIV ports.
+
+Version 1.2.2 (Apr 20, 2011)
+============================
+
+  Fixes
+  =====
+	libfcoe/libfc: Fix Cont00054820: compilation fixes for RHEL 6.1
+
+Version 1.2.1 (Apr 12, 2011)
+============================
+
+  Fixes
+  =====
+	libfcoe: Fix Cont00054500: Handle CVL with no VN_Port descripto
+
+Version 1.2.0 (Mar 18, 2011)
+============================
+
+  Fixes
+  =====
+        libfc: Fix Cont00052985 - Creating NPIV ports causes fc_disc_gpn_ft_req call trace
+
+Version 1.1.9 (Feb 28, 2011)
+============================
+
+  Fixes
+  =====
+        Makefile: Add checks for distro/kernel version verification
+
+
+Version 1.1.8 (Nov 08, 2010)
+============================
+
+  Fixes
+  =====
+	libfc: Fix Cont00050934: Does not respond to FIP LOGO
+
+Version 1.1.7 (Oct 14, 2010)
+============================
+
+  Fixes
+  =====
+	libfcoe: Fix Cont00050197 - Cannot login to Cisco NPV switch
+
+Version 1.1.6 (Oct 14, 2010)
+============================
+
+  Fixes
+  =====
+	libfc: adds flogi retry in case DID is zero in RJT
+	libfc: Do not let disc work cancel itself
+	
+Version 1.1.5 (Oct 12, 2010)
+============================
+
+  Fixes
+  =====
+	libfcoe: Fix Cont00050344 - enode, npiv nodes fail to log back after vlan change
+
+Version 1.1.4 (Sep 28, 2010)
+============================
+
+  Fixes
+  =====
+	libfcoe: Fix Cont00049545: Do not operate in non-FIP mode
+
+Version 1.1.3 (Aug 20, 2010)
+============================
+
+  Fixes
+  =====
+	libfcoe: Fix Cont00049555 - FLOGI not issued for 4 secs even after Disc Adv
+	libfcoe: Fix Cont00049545: driver sends non-FIP FLOGI to brocade when RSTP is enabled
+
+Version 1.1.2 (Aug 12, 2010)
+============================
+
+  Fixes
+  =====
+	libfc: Fix Cont00049334 - panic at libfc_exit
+
+Version 1.1.1 (Aug 04, 2010)
+============================
+
+  Fixes
+  =====
+	libfc/libfcoe: Workaround for Brocade switch issue (CQ 48193)
+	libfc: Fallback to common exchange pool if per cpu exchange pool is full
+	
+Version 1.1.0 (July 16, 2010)
+============================
+
+  Fixes
+  =====
+	libfc: Initiator doesnt retransmit if SCR/FLOGI gets rejected by the switch
+		(open-fcoe review comments incorporated)
+	libfcoe: Host does not handle CVL to NPIV instantiated port correctly
+		(Fix duplicate descriptor bug)
+
+Version 1.0.9 (July 12, 2010)
+============================
+
+  Fixes
+  =====
+	libfcoe: Host does not handle CVL to NPIV instantiated port correctly
+
+Version 1.0.8 (July 2, 2010)
+============================
+
+  Fixes
+  =====
+	libfc: Initiator doesnt retransmit if SCR/FLOGI gets rejected by the switch
+
+Version 1.0.7 (Jun 2, 2010)
+===========================
+
+  Fixes
+  =====
+	libfcoe: Drop packets with mismatched MAC address
+	libfc: fix indefinite rport restart
+	libfc: Fix remote port restart problem
+	libfc: lport state is enum not bit mask
+	libfcoe: Check for order and missing critical descriptors for FIP ELS requests
+	libfcoe: Host doesnt handle CVL to NPIV ports
+	libfcoe: Handle duplicate critical descriptors
+	libfcoe: update FIP FCF D flag from advertisments
+	libfcoe: Use fka_period as periodic timeouts to age out fcf if
+	libfcoe: fix lenient aging of FCF advertisements
+	libfc: Handle unsolicited PRLO request
+	libfc: Honor LS_ACC response codes for PRLI
+	libfc: Retry a rejected PRLI request
+	libfcoe: No solicitation if adv is dropped
+	libfcoe: Avoid hang when receiving non-critical descriptors
+	
+
+Version 1.0.0 (Apr 22, 2010)
+=============================
+
+  Fixes
+  =====
+	None
+
+  Enhancements
+  ============
+	Initial release

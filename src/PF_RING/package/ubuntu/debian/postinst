@@ -1,0 +1,8 @@
+#!/bin/sh
+
+/sbin/depmod
+
+echo "Adding the pf_ring startup script"
+update-rc.d pf_ring defaults 30 >/dev/null
+
+exit 0

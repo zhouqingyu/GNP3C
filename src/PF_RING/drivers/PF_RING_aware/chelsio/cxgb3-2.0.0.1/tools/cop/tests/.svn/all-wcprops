@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/tests
+END
+good_rules0.out
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/tests/good_rules0.out
+END
+bad_rules0
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/tests/bad_rules0
+END
+good_rules0
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/tests/good_rules0
+END

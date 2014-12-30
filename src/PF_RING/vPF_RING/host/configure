@@ -1,0 +1,58 @@
+if [[ -d qemu-kvm-$1-vpfring-diff ]]
+then
+	VERSION=$1
+else
+	VERSION="0.15.1"
+	#echo "usage: $0 <supported qemu-kvm version>"
+	#exit
+fi
+
+if [[ ! -f qemu-kvm-$VERSION.tar.gz ]]
+then
+	echo ""
+	echo "Downloading QEMU/KVM $VERSION from http://downloads.sourceforge.net/project/kvm/qemu-kvm/$VERSION/qemu-kvm-$VERSION.tar.gz"
+	echo ""
+
+	wget http://downloads.sourceforge.net/project/kvm/qemu-kvm/$VERSION/qemu-kvm-$VERSION.tar.gz
+fi
+
+echo ""
+echo "Building QEMU $VERSION working directory"
+echo ""
+
+rm -rf qemu-kvm-$VERSION
+
+tar xvzf qemu-kvm-$VERSION.tar.gz
+
+echo ""
+echo "Patching QEMU"
+echo ""
+
+# Command to generate a patch: diff -u original.c new.c > original.patch
+patch qemu-kvm-$VERSION/Makefile.target < qemu-kvm-$VERSION-vpfring-diff/Makefile.target.patch
+if [[ -f qemu-kvm-$VERSION-vpfring-diff/virtio-pci.c.patch ]]
+then
+	patch qemu-kvm-$VERSION/hw/virtio-pci.c < qemu-kvm-$VERSION-vpfring-diff/virtio-pci.c.patch
+fi
+cp qemu-kvm-$VERSION-vpfring-diff/hw/* qemu-kvm-$VERSION/hw/
+
+echo ""
+echo "Configuring QEMU"
+echo ""
+
+cd qemu-kvm-$VERSION
+./configure --prefix=/usr/local/kvm
+
+cd ..
+echo "" 			 		 > Makefile
+echo "all:"					>> Makefile
+echo "	cd qemu-kvm-$VERSION; make"		>> Makefile
+echo "install:"					>> Makefile
+echo "	cd qemu-kvm-$VERSION; make install"	>> Makefile
+echo "clean:"					>> Makefile
+echo "	cd qemu-kvm-$VERSION; make clean"	>> Makefile
+
+echo ""
+echo "run 'make && make install'"
+echo ""
+

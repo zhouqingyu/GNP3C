@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src
+END
+e1000_osdep.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_osdep.h
+END
+igb_ptp.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_ptp.c
+END
+e1000_i210.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_i210.h
+END
+igb_vmdq.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_vmdq.c
+END
+igb_sysfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_sysfs.c
+END
+kcompat_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/kcompat_ethtool.c
+END
+igb_vmdq.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_vmdq.h
+END
+e1000_82575.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_82575.c
+END
+igb_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_ethtool.c
+END
+e1000_82575.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_82575.h
+END
+e1000_regs.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_regs.h
+END
+e1000_api.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_api.c
+END
+e1000_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_api.h
+END
+e1000_defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_defines.h
+END
+Module.supported
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/Module.supported
+END
+e1000_hw.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_hw.h
+END
+e1000_mbx.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_mbx.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/Makefile
+END
+e1000_manage.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_manage.c
+END
+kcompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/kcompat.c
+END
+e1000_mbx.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_mbx.h
+END
+e1000_manage.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_manage.h
+END
+kcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/kcompat.h
+END
+igb_regtest.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_regtest.h
+END
+e1000_mac.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_mac.c
+END
+e1000_nvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_nvm.c
+END
+e1000_phy.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_phy.c
+END
+igb_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_main.c
+END
+igb.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb.h
+END
+e1000_mac.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_mac.h
+END
+e1000_nvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_nvm.h
+END
+e1000_phy.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_phy.h
+END
+igb_procfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_procfs.c
+END
+e1000_i210.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/e1000_i210.c
+END
+igb_param.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5826/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.0.17/src/igb_param.c
+END

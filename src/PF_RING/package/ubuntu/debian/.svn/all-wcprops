@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ntop/!svn/ver/5948/trunk/PF_RING/package/ubuntu/debian
+END
+files.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ntop/!svn/ver/5851/trunk/PF_RING/package/ubuntu/debian/files.in
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/COPYRIGHT
+END
+conffiles
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/conffiles
+END
+README.Debian
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/README.Debian
+END
+README.target
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/README.target
+END
+postinst
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ntop/!svn/ver/5928/trunk/PF_RING/package/ubuntu/debian/postinst
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ntop/!svn/ver/5703/trunk/PF_RING/package/ubuntu/debian/compat
+END
+preinst
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/preinst
+END
+postrm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ntop/!svn/ver/5928/trunk/PF_RING/package/ubuntu/debian/postrm
+END
+prerm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ntop/!svn/ver/5927/trunk/PF_RING/package/ubuntu/debian/prerm
+END
+control.in
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ntop/!svn/ver/5391/trunk/PF_RING/package/ubuntu/debian/control.in
+END
+docs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/docs
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ntop/!svn/ver/5948/trunk/PF_RING/package/ubuntu/debian/rules
+END
+changelog.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ntop/!svn/ver/5851/trunk/PF_RING/package/ubuntu/debian/changelog.in
+END
+substvars
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/substvars
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/README
+END
+dirs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ntop/!svn/ver/5068/trunk/PF_RING/package/ubuntu/debian/dirs
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/Include
+END
+inetprivate.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/Include/inetprivate.h
+END
+telnet.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/Include/telnet.h
+END
+w32_fzs.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/Include/w32_fzs.h
+END
+getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/Include/getopt.h
+END
+errno.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4470/trunk/PF_RING/userland/tcpdump-4.1.1/win32/Include/errno.h
+END

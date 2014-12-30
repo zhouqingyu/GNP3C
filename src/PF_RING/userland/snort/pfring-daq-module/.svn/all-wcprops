@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ntop/!svn/ver/6616/trunk/PF_RING/userland/snort/pfring-daq-module
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4718/trunk/PF_RING/userland/snort/pfring-daq-module/Makefile.am
+END
+daq_pfring.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/6616/trunk/PF_RING/userland/snort/pfring-daq-module/daq_pfring.c
+END
+DAQ_Microcloud.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/6315/trunk/PF_RING/userland/snort/pfring-daq-module/DAQ_Microcloud.pdf
+END
+README.1st
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/5845/trunk/PF_RING/userland/snort/pfring-daq-module/README.1st
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/6291/trunk/PF_RING/userland/snort/pfring-daq-module/configure.ac
+END

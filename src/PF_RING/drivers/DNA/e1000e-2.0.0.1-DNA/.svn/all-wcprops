@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ntop/!svn/ver/6833/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA
+END
+SUMS
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ntop/!svn/ver/5510/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA/SUMS
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ntop/!svn/ver/5510/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA/COPYING
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ntop/!svn/ver/5510/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA/README
+END
+e1000e.7
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ntop/!svn/ver/5510/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA/e1000e.7
+END
+pci.updates
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ntop/!svn/ver/5510/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA/pci.updates
+END
+e1000e.spec
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ntop/!svn/ver/5510/trunk/PF_RING/drivers/DNA/e1000e-2.0.0.1-DNA/e1000e.spec
+END

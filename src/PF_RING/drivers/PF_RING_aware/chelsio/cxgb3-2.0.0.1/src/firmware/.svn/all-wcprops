@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/firmware
+END
+firmware_exports.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/firmware/firmware_exports.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/firmware/Makefile
+END
+t3fw-7.12.0.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/firmware/t3fw-7.12.0.bin
+END

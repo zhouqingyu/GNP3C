@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ntop/!svn/ver/6043/trunk/PF_RING/userland/lib/notused
+END
+pfring_mod_multi.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ntop/!svn/ver/4938/trunk/PF_RING/userland/lib/notused/pfring_mod_multi.h
+END
+pfring_qat.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ntop/!svn/ver/6041/trunk/PF_RING/userland/lib/notused/pfring_qat.c
+END
+pfring_mod_multi.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ntop/!svn/ver/4938/trunk/PF_RING/userland/lib/notused/pfring_mod_multi.c
+END
+pfring_qat.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ntop/!svn/ver/6041/trunk/PF_RING/userland/lib/notused/pfring_qat.h
+END
+README.QAT
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ntop/!svn/ver/6043/trunk/PF_RING/userland/lib/notused/README.QAT
+END

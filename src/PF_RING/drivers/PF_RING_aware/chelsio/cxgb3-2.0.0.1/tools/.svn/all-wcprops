@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools
+END
+ifup-local
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/ifup-local
+END
+perftune.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/perftune.sh
+END
+update_eeprom.sh
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/update_eeprom.sh
+END

@@ -1,0 +1,81 @@
+--- qemu-kvm-1.1.1/hw/virtio-pci.c	2012-07-16 09:52:03.000000000 +0200
++++ qemu-kvm-1.1.1-vpfring-diff/virtio-pci.c	2012-09-04 01:13:24.000000000 +0200
+@@ -21,6 +21,7 @@
+ #include "virtio-blk.h"
+ #include "virtio-net.h"
+ #include "virtio-serial.h"
++#include "vnplug-ctrl.h"
+ #include "virtio-scsi.h"
+ #include "pci.h"
+ #include "qemu-error.h"
+@@ -886,6 +887,27 @@
+     return virtio_exit_pci(pci_dev);
+ }
+ 
++static int vnplug_ctrl_init_pci(PCIDevice *pci_dev)
++{
++	VirtIOPCIProxy *proxy = DO_UPCAST(VirtIOPCIProxy, pci_dev, pci_dev);
++	VirtIODevice *vdev;
++
++	vdev = vnplug_ctrl_init(&pci_dev->qdev);
++
++	virtio_init_pci(proxy, vdev);
++
++	proxy->nvectors = vdev->nvectors;
++	return 0;
++}
++
++static int vnplug_ctrl_exit_pci(PCIDevice *pci_dev)
++{
++	VirtIOPCIProxy *proxy = DO_UPCAST(VirtIOPCIProxy, pci_dev, pci_dev);
++
++	vnplug_ctrl_exit(proxy->vdev);
++	return virtio_exit_pci(pci_dev);
++}
++
+ static Property virtio_blk_properties[] = {
+     DEFINE_PROP_HEX32("class", VirtIOPCIProxy, class_code, 0),
+     DEFINE_BLOCK_PROPERTIES(VirtIOPCIProxy, blk.conf),
+@@ -1014,6 +1036,34 @@
+     .class_init    = virtio_balloon_class_init,
+ };
+ 
++static Property vnplug_ctrl_properties[] = {
++    DEFINE_VIRTIO_COMMON_FEATURES(VirtIOPCIProxy, host_features),
++    DEFINE_PROP_END_OF_LIST(),
++};
++
++static void vnplug_ctrl_class_init(ObjectClass *klass, void *data)
++{
++    DeviceClass *dc = DEVICE_CLASS(klass);
++    PCIDeviceClass *k = PCI_DEVICE_CLASS(klass);
++
++    k->init = vnplug_ctrl_init_pci;
++    k->exit = vnplug_ctrl_exit_pci;
++    //k->romfile = "pxe-vnplug.rom";
++    k->vendor_id = PCI_VENDOR_ID_REDHAT_QUMRANET;
++    k->device_id = PCI_DEVICE_ID_VNPLUG_CTRL;
++    k->revision = VIRTIO_PCI_ABI_VERSION;
++    k->class_id = PCI_CLASS_NETWORK_ETHERNET;
++    dc->reset = virtio_pci_reset;
++    dc->props = vnplug_ctrl_properties;
++}
++
++static TypeInfo vnplug_ctrl_info = {
++    .name          = "vnplug",
++    .parent        = TYPE_PCI_DEVICE,
++    .instance_size = sizeof(VirtIOPCIProxy),
++    .class_init    = vnplug_ctrl_class_init,
++};
++
+ static int virtio_scsi_init_pci(PCIDevice *pci_dev)
+ {
+     VirtIOPCIProxy *proxy = DO_UPCAST(VirtIOPCIProxy, pci_dev, pci_dev);
+@@ -1075,6 +1125,7 @@
+     type_register_static(&virtio_serial_info);
+     type_register_static(&virtio_balloon_info);
+     type_register_static(&virtio_scsi_info);
++    type_register_static(&vnplug_ctrl_info);
+ }
+ 
+ type_init(virtio_pci_register_types)

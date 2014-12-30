@@ -1,0 +1,1608 @@
+commit 415199f2bd977fa4065d4e836b4b7543f7993bc3
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 20 14:55:24 2011 +0000
+
+    cnic: Add VLAN ID as a parameter during netevent upcall
+    
+    The bnx2fc driver needs to handle netdev events on VLAN devices.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Bhanu Prakash Gollapudi <bprakash@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 74e49bbdabbac34c77b280152b1de9bef9bf9be7
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 20 14:55:23 2011 +0000
+
+    cnic: Wait for all Context IDs to be deleted before sending FCOE_DESTROY_FUNC
+    
+    Otherwise, the firmware will not respond and we'll have to wait for
+    timeout.  Refactor the wait loop we already have into a separate
+    function for this purpose.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Bhanu Prakash Gollapudi <bprakash@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b37a41e390310429d4171b0f7b6c6eab04512dc0
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 20 14:55:22 2011 +0000
+
+    cnic: Fix Context ID space calculation
+    
+    Include FCoE CID space only for E2_PLUS devices.  Remove old CID
+    offset adjustments that are no longer needed.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Bhanu Prakash Gollapudi <bprakash@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 558e4c758c4c7bf209325f5865189c6558860b2b
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 13 17:24:20 2011 +0000
+
+    cnic: Return proper error code if we fail to send netlink message
+    
+    to allow iSCSI connection to fail faster instead of waiting for the
+    long timeout.
+    
+    Update version to 2.5.6.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Matt Carlson <mcarlson@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e1dd883cb15310dc2ded9995a1f1d8b1cb1e88f3
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 13 17:24:19 2011 +0000
+
+    cnic: Fix ring setup/shutdown code
+    
+    Latest bnx2x driver uses different CID for the iSCSI rings, so
+    we need to pass it in the ring init data.  The rx ring is also
+    zeroed out to prevent stale DMA addresses from being used after
+    shutdown.
+    
+    The same cp local variable redefined inside the else branch is
+    also eliminated.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Matt Carlson <mcarlson@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b7d40315c9643034ac4b5c9dda480d0124416f89
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 13 17:24:18 2011 +0000
+
+    cnic: Fix port_mode setting
+    
+    CHIP_2_PORT_MODE was not set correctly.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Matt Carlson <mcarlson@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 973e574e26cc8f4704e5d7f112fd566386e37f04
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jul 13 17:24:17 2011 +0000
+
+    cnic: Replace get_random_bytes() with random32()
+    
+    Suggested by Stephen Hemminger <shemminger@vyatta.com>
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Matt Carlson <mcarlson@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit f4b5ad26bcb983c493e131ff34b2fa60100c82e5
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Mon Jun 20 15:15:56 2011 +0000
+
+    cnic, bnx2i: Add support for new devices - 57800, 57810, and 57840
+    
+    And change iSCSI RQ doorbell size from 16B to 64B to match new firmware.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eddie Wai <eddie.wai@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 43d620c82985b19008d87a437b4cf83f356264f7
+Author: Joe Perches <joe@perches.com>
+Date:   Thu Jun 16 19:08:06 2011 +0000
+
+    drivers/net: Remove casts of void *
+    
+    Unnecessary casts of void * clutter the code.
+    
+    These are the remainder casts after several specific
+    patches to remove netdev_priv and dev_priv.
+    
+    Done via coccinelle script (and a little editing):
+    
+    $ cat cast_void_pointer.cocci
+    @@
+    type T;
+    T *pt;
+    void *pv;
+    @@
+    
+    - pt = (T *)pv;
+    + pt = pv;
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Acked-by: Sjur Brændeland <sjur.brandeland@stericsson.com>
+    Acked-By: Chris Snook <chris.snook@gmail.com>
+    Acked-by: Jon Mason <jdmason@kudzu.us>
+    Acked-by: Geert Uytterhoeven <geert@linux-m68k.org>
+    Acked-by: David Dillow <dave@thedillows.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 619c5cb6885b936c44ae1422ef805b69c6291485
+Author: Vlad Zolotarov <vladz@broadcom.com>
+Date:   Tue Jun 14 14:33:44 2011 +0300
+
+    New 7.0 FW: bnx2x, cnic, bnx2i, bnx2fc
+    
+    New FW/HSI (7.0):
+     - Added support to 578xx chips
+     - Improved HSI - much less driver's direct access to the FW internal
+       memory needed.
+    
+    New implementation of the HSI handling layer in the bnx2x (bnx2x_sp.c):
+     - Introduced chip dependent objects that have chip independent interfaces
+       for configuration of MACs, multicast addresses, Rx mode, indirection table,
+       fast path queues and function initialization/cleanup.
+     - Objects functionality is based on the private function pointers, which
+       allows not only a per-chip but also PF/VF differentiation while still
+       preserving the same interface towards the driver.
+     - Objects interface is not influenced by the HSI changes which do not require
+       providing new parameters keeping the code outside the bnx2x_sp.c invariant
+       with regard to such HSI chnages.
+    
+    Changes in a CNIC, bnx2fc and bnx2i modules due to the new HSI.
+    
+    Signed-off-by: Vladislav Zolotarov <vladz@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Bhanu Prakash Gollapudi <bprakash@broadcom.com>
+    Signed-off-by: Eilon Greenstein <eilong@broadcom.com>
+    Signed-off-by: David S. Miller <davem@conan.davemloft.net>
+
+commit 59e5137357559ec60b2e72bdc3d5a7e22c47212b
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue Jun 14 01:32:38 2011 +0000
+
+    cnic: Move indexing function pointers to struct kcq_info
+    
+    The hardware indexing scheme for the FCoE kcq will change in the upcoming
+    firmware.  This patch will cope with the change easily.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Vladislav Zolotarov <vladz@broadcom.com>
+    Signed-off-by: David S. Miller <davem@conan.davemloft.net>
+
+commit 7625eb2f2fff7bfae41d3119b472c20b48874895
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jun 8 19:29:36 2011 +0000
+
+    cnic, bnx2: Check iSCSI support early in bnx2_init_one()
+    
+    Based on earlier patch from Neil Horman <nhorman@tuxdriver.com>
+    
+    If iSCSI is not supported on a bnx2 device, bnx2_cnic_probe() will
+    return NULL and the cnic device will not be visible to bnx2i.  This
+    will prevent bnx2i from registering and then unregistering during
+    cnic_start() and cause the warning message:
+    
+    bnx2 0003:01:00.1: eth1: Failed waiting for ULP up call to complete
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Cc: Neil Horman <nhorman@tuxdriver.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit db1d350fcb156b58f66a67680617077bcacfe6fc
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jun 8 19:29:35 2011 +0000
+
+    cnic: Improve NETDEV_UP event handling
+    
+    During NETDEV_UP, we use symbol_get() to get the net driver's cnic
+    probe function.  This sometimes doesn't work if NETDEV_UP happens
+    right after NETDEV_REGISTER and the net driver is still running module
+    init code.  As a result, the cnic device may not be discovered.  We
+    fix this by probing on all NETDEV events if the device's netif_running
+    state is up.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 11f23aa8ccd56786f0a6f04211cf59b3fab2ce08
+Author: Eddie Wai <eddie.wai@broadcom.com>
+Date:   Wed Jun 8 19:29:34 2011 +0000
+
+    cnic: Randomize initial TCP port for iSCSI connections
+    
+    This reduces the likelihood of port re-use when re-loading the driver.
+    
+    Signed-off-by: Eddie Wai <eddie.wai@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 101c40c8cb0d10c30f423805f9f5b7a75956832d
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jun 8 19:29:33 2011 +0000
+
+    cnic: Fix race conditions with firmware
+    
+    During iSCSI connection terminations, if the target is also terminating
+    at about the same time, the firmware may not complete the driver's
+    request to close or reset the connection.  This is fixed by handling
+    other events (instead of the expected completion event) as an indication
+    that the driver's request has been rejected.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 93736656138e6d2f39f19c1d68f9ef81cfc9dd66
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jun 8 19:29:32 2011 +0000
+
+    cnic: Fix interrupt logic
+    
+    We need to keep looping until cnic_get_kcqes() returns 0.  cnic_get_kcqes()
+    returns a maximum of 64 entries.  If there are more entries in the queue
+    and we don't loop back, the remaining entries may not be serviced for a
+    long time.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 70c71606190e9115e5f8363bfcd164c582eb314a
+Author: Paul Gortmaker <paul.gortmaker@windriver.com>
+Date:   Sun May 22 16:47:17 2011 -0400
+
+    Add appropriate <linux/prefetch.h> include for prefetch users
+    
+    After discovering that wide use of prefetch on modern CPUs
+    could be a net loss instead of a win, net drivers which were
+    relying on the implicit inclusion of prefetch.h via the list
+    headers showed up in the resulting cleanup fallout.  Give
+    them an explicit include via the following $0.02 script.
+    
+     =========================================
+     #!/bin/bash
+     MANUAL=""
+     for i in `git grep -l 'prefetch(.*)' .` ; do
+     	grep -q '<linux/prefetch.h>' $i
+     	if [ $? = 0 ] ; then
+     		continue
+     	fi
+    
+     	(	echo '?^#include <linux/?a'
+     		echo '#include <linux/prefetch.h>'
+     		echo .
+     		echo w
+     		echo q
+     	) | ed -s $i > /dev/null 2>&1
+     	if [ $? != 0 ]; then
+     		echo $i needs manual fixup
+     		MANUAL="$i $MANUAL"
+     	fi
+     done
+     echo ------------------- 8\<----------------------
+     echo vi $MANUAL
+     =========================================
+    
+    Signed-off-by: Paul <paul.gortmaker@windriver.com>
+    [ Fixed up some incorrect #include placements, and added some
+      non-network drivers and the fib_trie.c case    - Linus ]
+    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
+
+commit 93ae653491f0a413d5f4d9aa4df45d09ecb55d62
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Fri Apr 8 13:03:02 2011 -0700
+
+    cnic: Fix rtnl deadlock
+    
+    When cnic_stop_hw() -> cnic_cm_stop_bnx2x_hw() is called under rtnl_lock()
+    from NETDEV_DOWN event, it waits for cnic_delete_task() to complete.
+    It will deadlock when cnic_delete_task() takes rtnl_lock() before
+    calling cnic_ulp_stop_one().
+    
+    We fix it by removing the rtnl_lock() in cnic_delete_task().
+    cnic_ulp_stop_one() has mutex and atomic bit ops to prevent important
+    operations from being done more than once, so it is not necessary to take
+    rtnl_lock().
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit fab0dc89f0d98459c6ce7fa27422949ac15837fa
+Author: Dmitry Kravkov <dmitry@broadcom.com>
+Date:   Thu Mar 31 17:04:22 2011 -0700
+
+    bnx2x, cnic: Disable iSCSI if DCBX negotiation is successful
+    
+    With current bnx2x firmware 6.2.9, iSCSI is not supported in DCB
+    network, so we need to disable it.  Add cnic command to disconnect
+    iSCSI connections and prevent future connections when DCBX negotiation
+    succeeds.
+    
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 4c9483b2fb5d2548c3cc1fe03cdd4484ceeb5d1c
+Author: David S. Miller <davem@davemloft.net>
+Date:   Sat Mar 12 16:22:43 2011 -0500
+
+    ipv6: Convert to use flowi6 where applicable.
+    
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1d28f42c1bd4bb2363d88df74d0128b4da135b4a
+Author: David S. Miller <davem@davemloft.net>
+Date:   Sat Mar 12 00:29:39 2011 -0500
+
+    net: Put flowi_* prefix on AF independent members of struct flowi
+    
+    I intend to turn struct flowi into a union of AF specific flowi
+    structs.  There will be a common structure that each variant includes
+    first, much like struct sock_common.
+    
+    This is the first step to move in that direction.
+    
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 78fbfd8a653ca972afe479517a40661bfff6d8c3
+Author: David S. Miller <davem@davemloft.net>
+Date:   Sat Mar 12 00:00:52 2011 -0500
+
+    ipv4: Create and use route lookup helpers.
+    
+    The idea here is this minimizes the number of places one has to edit
+    in order to make changes to how flows are defined and used.
+    
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0197b087ed6384760656f1e4a620a3e92d8dc0b0
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Mar 2 13:00:50 2011 +0000
+
+    cnic: Fix lost interrupt on bnx2x
+    
+    We service 2 queues (kcq1 and kcq2) in cnic_service_bnx2x_bh().  If
+    the status block index has changed when servicing the kcq2, we must
+    go back and check kcq1.  The latest status block index will be used
+    to acknowledge the interrupt, and without looping back to check kcq1,
+    we may miss events on kcq1.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 107c3f4d42adc9af393019b795dd2177fbe9e465
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Mar 2 13:00:49 2011 +0000
+
+    cnic: Prevent status block race conditions with hardware
+    
+    The status block index is used to acknowledge interrupt events and must
+    be read before checking for the interrupt events, so we need to add rmb()
+    to guarantee that.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b23dd4fe42b455af5c6e20966b7d6959fa8352ea
+Author: David S. Miller <davem@davemloft.net>
+Date:   Wed Mar 2 14:31:35 2011 -0800
+
+    ipv4: Make output route lookup return rtable directly.
+    
+    Instead of on the stack.
+    
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 2ba451421b23636c45fabfa522858c5c124b3673
+Author: Vladislav Zolotarov <vladz@broadcom.com>
+Date:   Mon Jan 31 14:39:17 2011 +0000
+
+    bnx2x, cnic: Consolidate iSCSI/FCoE shared mem logic in bnx2x
+    
+    Move all shared mem code to bnx2x to avoid code duplication.  bnx2x now
+    performs:
+    
+    - Read the FCoE and iSCSI max connection information.
+    - Read the iSCSI and FCoE MACs from NPAR configuration in shmem.
+    - Block the CNIC for the current function if there is neither FCoE nor
+      iSCSI valid configuration by returning NULL from bnx2x_cnic_probe().
+    
+    Signed-off-by: Vladislav Zolotarov <vladz@broadcom.com>
+    Signed-off-by: Eilon Greenstein <eilong@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 13707f9e5e46342b7b16c58be91ad93a476c3ffd
+Author: Eric Dumazet <eric.dumazet@gmail.com>
+Date:   Wed Jan 26 19:28:23 2011 +0000
+
+    drivers/net: remove some rcu sparse warnings
+    
+    Add missing __rcu annotations and helpers.
+    minor : Fix some rcu_dereference() calls in macvtap
+    
+    Signed-off-by: Eric Dumazet <eric.dumazet@gmail.com>
+    Acked-by: Arnd Bergmann <arnd@arndb.de>
+    Acked-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 5138826b52f8bc441770069b1b305e1d1426ae9e
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue Jan 25 22:14:50 2011 +0000
+
+    cnic: Fix big endian bug
+    
+    The chip's page tables did not set up properly on big endian machines,
+    causing EEH errors on PPC machines.
+    
+    Reported-by: Breno Leitao <leitao@linux.vnet.ibm.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 68d7c1aa2fee6acb11fcb826a207e4b81d8a1f57
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Jan 5 15:14:13 2011 +0000
+
+    cnic: Fix the type field in SPQ messages
+    
+    The new firmware interface requires each Slow Path Queue (SPQ) message's
+    type field to include the function number.  The existing code does not
+    do this consistently.  We fix this by OR'ing in the function number
+    into the type field centrally in cnic_submit_kwqe_16().
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 42bb8d56953a06de50941d6d3df89dc3023bb92d
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Mon Jan 3 15:21:46 2011 +0000
+
+    cnic: Do not call bnx2i when bnx2i is calling cnic_unregister_driver()
+    
+    We should call bnx2i to send the iSCSI netlink message earlier in
+    cnic_unregister_device().  By the time cnic_unregister_driver() is
+    called, bnx2i may have freed data structures used by the upcalls.
+    
+    Update version to 2.2.12.
+    
+    Reviewed-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 57045c996fb4e035f1d152b7e04315fc223352e9
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Mon Jan 3 15:21:45 2011 +0000
+
+    cnic: Do not allow iSCSI and FCoE on bnx2x multi-function mode
+    
+    Because the hardware does not yet support these in this mode.
+    
+    Reviewed-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit f7e4c9775ea648deed4a8193951e50d0c7706173
+Author: Jesper Juhl <jj@chaosbits.net>
+Date:   Fri Dec 31 11:18:48 2010 -0800
+
+    Broadcom CNIC core network driver: fix mem leak on allocation failures in cnic_alloc_uio_rings()
+    
+    We are leaking memory in drivers/net/cnic.c::cnic_alloc_uio_rings() if
+    either of the calls to dma_alloc_coherent() fail. This patch fixes it by
+    freeing both the memory allocated with kzalloc() and memory allocated with
+    previous calls to dma_alloc_coherent() when there's a failure.
+    
+    Thanks to  Joe Perches <joe@perches.com>  for suggesting a better
+    implementation than my initial version.
+    
+    Signed-off-by: Jesper Juhl <jj@chaosbits.net>
+    Acked-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e1928c86c4829703b800c81cc9edc939b5634e6f
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:43:04 2010 +0000
+
+    cnic: Add FCoE support on 57712
+    
+    - Connection ID (cid) management
+    - Slow-path command and response support
+    - Update version to 2.2.11.
+    
+    Reviewed-by: Bhanu Prakash Gollapudi <bprakash@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e21ba414eed8a233eadb79bb6b158ac7ceb35025
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:43:03 2010 +0000
+
+    cnic: Add kcq2 support on 57712
+    
+    The kcq2 (2nd kernel work queue) is used by FCoE on 57712 devices.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 42ecbb8426aa229167d7f9d4b4e20f24bf42cb24
+Author: Eddie Wai <waie@broadcom.com>
+Date:   Thu Dec 23 07:43:02 2010 +0000
+
+    cnic: Call cm_connect_complete() immediately on error
+    
+    If we get a path_resp error from userspace, call cm_connect_complete()
+    immediately with error so that bnx2i can react to the error faster.
+    
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit eaaa6e9c222d5c398488ed4216f0fd94e4b81759
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 08:38:30 2010 +0000
+
+    cnic: Check device state before reading the kcq pointer in IRQ
+    
+    If the device is down, the kcq pointer may be NULL.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 4aacb7afb6afd78efe26427e74fa56a5fc72fad3
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:43:01 2010 +0000
+
+    cnic: Support NIC Partition mode
+    
+    Add a common function cnic_read_bnx2x_iscsi_mac() to read the iSCSI
+    MAC address at any specified shared memory location.  In NIC Partition
+    mode, we need to get the MAC address from the MF_CFG area of shared
+    memory.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 5159fdc1e6cb4000f482faebeeba0be91611276d
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:42:59 2010 +0000
+
+    cnic: Use proper client and connection IDs on iSCSI ring
+    
+    Use the IDs specified by the bnx2x driver when initializing the ring.
+    We don't have to make code changes when these IDs change in the future.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 939b82e5bde56a98c72eccde2e3a88d32bffad4a
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:42:58 2010 +0000
+
+    cnic: Improve ->iscsi_nl_msg_send()
+    
+    1. Change first parameter from cnic_dev to ulp_handle which is the hba
+    pointer.  All other similar upcalls are using hba pointer.  The callee
+    can then directly reference the hba without conversion.
+    
+    2. Change return value from void to int so that an error code can be
+    passed back.  This allows the operation to be retried.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8adc9240f98a816f7e9b3d93b9446a790110e062
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:42:57 2010 +0000
+
+    cnic: Prevent "scheduling while atomic" when calling ->cnic_init()
+    
+    cnic_dev_list is protected by rtnl_lock and cnic_dev_lock spin_lock during
+    modifications.  When looping on cnic_dev_list and calling ->cnic_init(),
+    we should just hold rtnl_lock since ->cnic_init() may sleep.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 9b09336072796378dac46df63bcd43291b24fd12
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 23 07:42:56 2010 +0000
+
+    cnic: Fix iSCSI TCP port endian order.
+    
+    Pass the TCP port parameter for iSCSI connections to the firmware in
+    proper endian order.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 779bb41d4bd111d5631d58d1bf2d00b5c4389c80
+Author: Joe Perches <joe@perches.com>
+Date:   Sun Nov 14 17:04:37 2010 +0000
+
+    drivers/net/cnic.c: Remove unnecessary semicolons
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ee87a82a28cddbb9267a294172ecb3d3d3bdaa6c
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:51 2010 +0000
+
+    cnic: Add support for 57712 device
+    
+    Add new interrupt ack functions and other hardware interface logic to
+    support the new device.
+    
+    Update version to 2.2.6.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a3ceeeb8f11d74f26e3dfca40ded911a82402db5
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:50 2010 +0000
+
+    cnic: Decouple uio close from cnic shutdown
+    
+    During cnic shutdown, the original driver code requires userspace to
+    close the uio device within a few seconds.  This doesn't always happen
+    as the userapp may be hung or otherwise take a long time to close.  The
+    system may crash when this happens.
+    
+    We fix the problem by decoupling the uio structures from the cnic
+    structures during cnic shutdown.  We do not unregister the uio device
+    until the cnic driver is unloaded.  This eliminates the unreliable wait
+    loop for uio to close.
+    
+    All uio structures are kept in a linked list.  If the device is shutdown
+    and later brought back up again, the uio strcture will be found in the
+    linked list and coupled back to the cnic structures.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit cd801536c236e287f1d3eeee428abf9ffd523ede
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:49 2010 +0000
+
+    cnic: Add cnic_uio_dev struct
+    
+    and put all uio related structures and ring buffers in it.  This allows
+    uio operations to be done independent of the cnic device structures.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c06c0462250a5dbc9e58d00caab4cd7e6675128c
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:48 2010 +0000
+
+    cnic: Add cnic_free_uio()
+    
+    to free all UIO related structures.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit fdf24086f4752aee5dfb40143c736250df017820
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:47 2010 +0000
+
+    cnic: Defer iscsi connection cleanup
+    
+    The bnx2x devices require a 2 second quiet time before sending the last
+    RAMROD command to destroy a connection.  This sleep wait adds up to a
+    long delay when iscsid is serially destroying maultiple connections.
+    
+    Create a workqueue to perform the final connection cleanup in the
+    background to speed up the process.  This significantly speeds up the
+    process as the wait time can be done in parallel for multiple connections.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a2c9e769dbb92336ddacba01d399ad0f509e7094
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:46 2010 +0000
+
+    cnic: Add cnic_bnx2x_destroy_ramrod()
+    
+    Refactoring code for the next patch to defer connection clean up.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6e0dda0c467d6c66d64c146170ea35399ec34c15
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:45 2010 +0000
+
+    cnic: Convert ctx_flags to bit fields
+    
+    so that we can additional bit definitions without requiring a spinlock.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6e0dc64384298b29ac17de7362b7d6d2ef588304
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 13 14:06:44 2010 +0000
+
+    cnic: Add common cnic_request_irq()
+    
+    to reduce some duplicate code.  Also, use tasklet_kill() in
+    cnic_free_irq() to wait for the cnic_irq_task to complete.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c2bff63fad94eeecf59e4ba8e4cb51688ccae1ec
+Author: Dmitry Kravkov <dmitry@broadcom.com>
+Date:   Wed Oct 6 03:33:18 2010 +0000
+
+    bnx2x, cnic: Fix SPQ return credit
+    
+    Return proper L2 and L5 SPQ (slow path queue) credits.  Previously, all
+    SPQ events were counted as L5 types.
+    
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eilon Greenstein <eilong@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 523224a3b3cd407ce4e6731a087194e13a90db18
+Author: Dmitry Kravkov <dmitry@broadcom.com>
+Date:   Wed Oct 6 03:23:26 2010 +0000
+
+    bnx2x, cnic, bnx2i: use new FW/HSI
+    
+    This is the new FW HSI blob and the relevant definitions without logic changes.
+    It also included code adaptation for new HSI. New features are not enabled.
+    
+    New FW/HSI includes:
+    - Support for 57712 HW
+    - Future support for VF (not used)
+    - Improvements in FW interrupts scheme
+    - FW FCoE hooks (stubs for future usage)
+    
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eilon Greenstein <eilong@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 541a78103f097cd5120e55aaba56d099a64f153c
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 6 03:17:22 2010 +0000
+
+    cnic: Fine-tune ring init code.
+    
+    Initialize the rings only during cnic_uio_open() and shut them down
+    during cnic_uio_close().  Check for the new bit CNIC_LCL_FL_RINGS_INITED
+    before checking for ring interrupt.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1420398db4d5e236583d3ab392637df255bd5c6b
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 6 03:16:06 2010 +0000
+
+    cnic: Use pfid for internal memory offsets.
+    
+    The pfid (physical function ID) is the same as PCI function on production
+    devices.  The pfid for future devices will be different and will be used
+    for internal memory offsets.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ceb7e1c7c5ab86ca686d523f99ca473a1f3a984d
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 6 03:14:54 2010 +0000
+
+    cnic: Pass cp pointer to BNX2X_HW_CID.
+    
+    Preparation work for upcoming firmware interface changes.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit baeb2ffab4e67bb9174e6166e070a9a8ec94b0f6
+Author: Joe Perches <joe@perches.com>
+Date:   Wed Aug 11 07:02:48 2010 +0000
+
+    drivers/net: Convert unbounded kzalloc calls to kcalloc
+    
+    These changes may be slightly safer in some instances.
+    
+    There are other kzalloc calls with a multiply, but those
+    calls are typically "small fixed #" * sizeof(some pointer)"
+    and those are not converted.
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Acked-by: Gertjan van Wingerde <gwingerde@gmail.com>
+    Acked-by: Luciano Coelho <luciano.coelho@nokia.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 72b8a169dbfa74e7d1d08b97435e61e711d7be0e
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Jun 24 14:58:42 2010 +0000
+
+    cnic: Update version to 2.1.3.
+    
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b177a5d5d876965b42788f3a05197ef385c84dcf
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Jun 24 14:58:41 2010 +0000
+
+    cnic: Further unify kcq handling code.
+    
+    This eliminates some of the duplicate code for the various devices
+    that require the same basic kcq handling.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 644b9d4f8b8d74f4d87f14dede5e331555d3e701
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Jun 24 14:58:40 2010 +0000
+
+    cnic: Restructure kcq processing.
+    
+    By doing more work in the common function cnic_get_kcqes(), and
+    making full use of the kcq_info structure.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e6c2889478f04b30e5a71d753734644c579472fa
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Jun 24 14:58:39 2010 +0000
+
+    cnic: Unify kcq allocation for all devices.
+    
+    By creating a common data stucture kcq_info for all devices, the kcq
+    (kernel completion queue) for all devices can be allocated by common
+    code.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 66fee9ed03a4413ea054e437b65af6fd3583b4db
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Jun 24 14:58:38 2010 +0000
+
+    cnic: Unify IRQ code for all hardware types.
+    
+    By creating a common cnic_doirq().
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 520efdf44f0140eef9018518fdae5edfc86f3b6c
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Jun 24 14:58:37 2010 +0000
+
+    cnic: Fine-tune CID memory space calculation.
+    
+    The current code makes assumptions about the CID (context ID) memory
+    space and starting CID that may not be always correct when firmware
+    changes.  In particular, BNX2_ISCSI_START_CID may not always be fixed.
+    We now calculate cp->max_cid_space and cp->iscsi_start_cid dynamically
+    instead of using fixed constants.  The unused cp->max_iscsi_conn is also
+    eliminated.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8244132ea89cdd128003f5b9980fab50d8d36d72
+Merge: 7b2ff18 38000a9
+Author: David S. Miller <davem@davemloft.net>
+Date:   Wed Jun 23 18:26:27 2010 -0700
+
+    Merge branch 'master' of master.kernel.org:/pub/scm/linux/kernel/git/davem/net-2.6
+    
+    Conflicts:
+    	net/ipv4/ip_output.c
+
+commit 6b2a541db58dba5860ccbcfaf36caee064b8a9fd
+Author: Dmitry Kravkov <dmitry@broadcom.com>
+Date:   Wed Jun 23 11:57:09 2010 -0700
+
+    cnic: Disable statistics initialization for eth clients that do not support statistics
+    
+    Disable statistics initialization for eth clients that do not support
+     statistics. This prevents memory corruption on bnx2x hw.
+    
+    Signed-off-by: Dmitry Kravkov <dmitry@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eilon Greenstein <eilong@broadcom.com>
+
+commit 7b34a4644b4342896e0c1967b8f953213ea4a990
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue Jun 15 08:57:03 2010 +0000
+
+    cnic: Fix cnic_cm_abort() error handling.
+    
+    Fix the code that handles the error case when cnic_cm_abort() cannot
+    proceed normally.  We cannot just set the csk->state and we must
+    go through cnic_ready_to_close() to handle all the conditions.  We
+    also add error return code in cnic_cm_abort().
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 943189f1d564e69201f7d71e77f5608a701e3e55
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue Jun 15 08:57:02 2010 +0000
+
+    cnic: Refactor and fix cnic_ready_to_close().
+    
+    Combine RESET_RECEIVED and RESET_COMP logic and fix race condition
+    between these 2 events and cnic_cm_close().  In particular, we need
+    to (test_and_clear_bit(SK_F_OFFLD_COMPLETE, &csk->flags)) before we
+    update csk->state.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a1e621bf6d03621de207cd416f6a21969dd0601c
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue Jun 15 08:57:01 2010 +0000
+
+    cnic: Refactor code in cnic_cm_process_kcqe().
+    
+    Move chip-specific code to the respective chip's ->close_conn() functions
+    for better code organization.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ed99daa5a0de4df9ed579ce36ff8b1373b6dbe47
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue Jun 15 08:57:00 2010 +0000
+
+    cnic: Return error code in cnic_cm_close() if unsuccessful.
+    
+    So that bnx2i can handle the error condition immediately and not have to
+    wait for timeout.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com.
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d8d1f30b95a635dbd610dcc5eb641aca8f4768cf
+Author: Changli Gao <xiaosuo@gmail.com>
+Date:   Thu Jun 10 23:31:35 2010 -0700
+
+    net-next: remove useless union keyword
+    
+    remove useless union keyword in rtable, rt6_info and dn_route.
+    
+    Since there is only one member in a union, the union keyword isn't useful.
+    
+    Signed-off-by: Changli Gao <xiaosuo@gmail.com>
+    Signed-off-by: Eric Dumazet <eric.dumazet@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b58ffb41fc09d1ffaca97e5ae801233575be2a7f
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu May 27 16:31:41 2010 -0700
+
+    cnic: Fix context memory init. on 5709.
+    
+    We need to zero context memory on 5709 in the function cnic_init_context().
+    Without this, iscsid restart on 5709 will not work because of stale data.
+    TX context blocks should not be initialized by cnic_init_context() because
+    of the special remapping on 5709.
+    
+    Update version to 2.1.2.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 48f753d2ba94a4081400fa8d26bdbfbbf12b10de
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue May 18 11:32:53 2010 +0000
+
+    cnic: Return SPQ credit to bnx2x after ring setup and shutdown.
+    
+    Everytime the iSCSI ring finishes setup or shutdown, we need to return
+    the SPQ (slow path queue) credit to the bnx2x driver.  Without this step,
+    the SPQ will eventually be full causing iSCSI to fail.  This can happen
+    after 3 or 4 MTU changes for example.
+    
+    Add code to wait for these slow path commands to complete in the RX ring
+    and return the SPQ credit to bnx2x.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1f1332a3cb7ac73e3bcff6ea42ff965c90a29d12
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Tue May 18 11:32:52 2010 +0000
+
+    cnic: Convert cnic_local_flags to atomic ops.
+    
+    It is easier to expand the flags for other purposes because it does
+    not require a spin_lock.  The next bug fix patch needs a flag in
+    cnic_local_flags.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a4b770972b8f819e408d7cc3ae9637e15bff62f6
+Author: Joe Perches <joe@perches.com>
+Date:   Fri May 14 00:19:28 2010 -0700
+
+    drivers/net: Remove unnecessary returns from void function()s
+    
+    This patch removes from drivers/net/ all the unnecessary
+    return; statements that precede the last closing brace of
+    void functions.
+    
+    It does not remove the returns that are immediately
+    preceded by a label as gcc doesn't like that.
+    
+    It also does not remove null void functions with return.
+    
+    Done via:
+    $ grep -rP --include=*.[ch] -l "return;\n}" net/ | \
+      xargs perl -i -e 'local $/ ; while (<>) { s/\n[ \t\n]+return;\n}/\n}/g; print; }'
+    
+    with some cleanups by hand.
+    
+    Compile tested x86 allmodconfig only.
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 94824f3dbe0d3f62470603bbb18efb5510aaf07c
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Apr 7 20:53:54 2010 -0700
+
+    cnic: Fix crash during bnx2x MTU change.
+    
+    cnic_service_bnx2x() irq handler can be called during chip reset from
+    MTU change.  Need to check that the cnic's device state is up before
+    handling the irq.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1d9cfc4e354cd619d92bb938657dec3c533e6929
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Feb 24 14:42:09 2010 +0000
+
+    cnic: Update version to 2.1.1.
+    
+    And update copyright to 2010.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a4dde3abbf87a495154a876576e1ab34b17b5ef1
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Feb 24 14:42:08 2010 +0000
+
+    cnic: Use union for the status blocks of different devices.
+    
+    We only need to assign the status block address once and it also saves
+    space in the structure.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c76284af9ec8a010c502a70249cb74b3bb69ec6f
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Feb 24 14:42:07 2010 +0000
+
+    cnic: Simplify route checking during iSCSI connection.
+    
+    With a separate IP address for iSCSI, connections should proceed
+    whether or not we can get a route to the target from the network stack.
+    It is possible that the network IP address may not reach the iSCSI target.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d02a5e6c2fba8b114c44cf05085fca07180f37f1
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Feb 24 14:42:06 2010 +0000
+
+    cnic: Fix panic in cnic_iscsi_nl_msg_recv() when device is down.
+    
+    Some data structures are freed when the device is down and it will
+    crash if an ISCSI netlink message is received.  Add RCU protection
+    to prevent this.  In the shutdown path, ulp_ops[CNIC_ULP_L4] is
+    assigned NULL and rcu_synchronized before freeing the data
+    structures.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 66883e90eaa0dd55d395c0f9a0c6da5d50809804
+Author: Eddie Wai <waie@broadcom.com>
+Date:   Wed Feb 24 14:42:05 2010 +0000
+
+    cnic: Finetune iSCSI connection reset.
+    
+    For bnx2 devices, always send notification to bnx2i to let it initiate
+    the cleanup when RST is received.
+    
+    For bnx2x devices, add unsolicited RST_COMP handling to start the cleanup.
+    
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a9736c086cc6221659e498f0855152c32dbc1396
+Author: Eddie Wai <waie@broadcom.com>
+Date:   Wed Feb 24 14:42:04 2010 +0000
+
+    cnic: Finetune iSCSI connection set up.
+    
+    Initialize IP ID and handle some additional connection errors.
+    
+    Signed-off-by: Eddie Wai <waie@broadcom.com>
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ddf79b20eefd27797ce461411679a48e998701ca
+Author: Joe Perches <joe@perches.com>
+Date:   Wed Feb 17 15:01:54 2010 +0000
+
+    drivers/net/cnic.c: Use (pr|netdev)_<level> macro helpers
+    
+    Add #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
+    Remove #define PFX
+    Use pr_<level>
+    Use netdev_<level>
+    Remove periods from formats
+    Coalesce long formats
+    Use __func__
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 4e9c4fd3e7e022c7a5b8bb7cd06bf914b202cfea
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 10 15:40:58 2009 +0000
+
+    cnic: Zero out status block and Event Queue indices.
+    
+    To prevent stale indices from causing spurious events when restarting the
+    bnx2x devices.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1bcdc32cf4d94442eba79599ce8438ea0b8f78b5
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Thu Dec 10 15:40:57 2009 +0000
+
+    cnic: Send delete command when shutting down iSCSI ring.
+    
+    This step is necessary on the bnx2x devices when restarting the iSCSI
+    ring.  Without it, the firmware can assert and cause bnx2x to report
+    errors.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 3248e1682035eef6774c280cd7be19984feb78bb
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Dec 2 15:15:39 2009 +0000
+
+    cnic: Use dma_alloc_coherent().
+    
+    Replace pci_alloc_consistent() with dma_alloc_coherent() so that
+    appropriate GFP flags can be used.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 15971c3ce3caf9a92b603a61b07e0be8c9b9d276
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Dec 2 15:15:38 2009 +0000
+
+    cnic: Fix rq_page_table DMA address.
+    
+    The old code mistakenly zeroed out the upper 32-bit of the DMA address.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit dd2e4dbce32a2802088f6d0132046afec9bfb2ad
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Dec 2 15:15:37 2009 +0000
+
+    cnic: Fix bogus iSCSI MAC address
+    
+    Fix code to read the proper iSCSI MAC address for bnx2x devices.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8b065b671d3096bfe0dbc9a833cb592f84642436
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Dec 2 15:15:36 2009 +0000
+
+    cnic: Fix bnx2x ring shutdown.
+    
+    Need to send a HALT command to the firmware to fully shutdown the bnx2x
+    rings.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c7596b79feb3d15bea64007254f77233bda811f4
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Dec 2 15:15:35 2009 +0000
+
+    cnic: Fix ring I/O address for bnx2x devices.
+    
+    Old code was initializing the ring producers using an incorrect I/O
+    address.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 164165dad7e607ec359e64b6fae72abbf3640ea6
+Author: Joe Perches <joe@perches.com>
+Date:   Thu Nov 19 09:30:10 2009 +0000
+
+    drivers/net: tasklet_init - Remove unnecessary leading & from second arg
+    
+    Changed function pointer use from non-majority address-of style
+    to majority short form without & via: (was: 8 with &, 36 without)
+    
+    grep -rPl "\btasklet_init\s*\([^,\)]+,\s*\&" drivers/net | while read file ; do \
+    	perl -i -e 'local $/; while (<>) { s@(\btasklet_init\s*\([^,\)]+,\s*)\&@\1@g ; print ; }' $file ;\
+    done
+    
+    Compile tested allyesconfig x86
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    
+     drivers/net/cnic.c |    4 ++--
+     drivers/net/jme.c  |   10 +++++-----
+     drivers/net/skge.c |    2 +-
+     3 files changed, 8 insertions(+), 8 deletions(-)
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0d37f36ff9bc41067c71635d14b6a5834853a779
+Author: roel kluin <roel.kluin@gmail.com>
+Date:   Mon Nov 2 06:53:44 2009 +0000
+
+    cnic: ensure ulp_type is not negative
+    
+    `ulp_type' is signed, make sure it is not negative
+    when we read the array element.
+    
+    Signed-off-by: Roel Kluin <roel.kluin@gmail.com>
+    Acked-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0519d83d83ed485b5a1f9222ff69d7d6c9bb8a01
+Merge: 38bfd8f b5dd884
+Author: David S. Miller <davem@davemloft.net>
+Date:   Thu Oct 29 21:28:59 2009 -0700
+
+    Merge branch 'master' of master.kernel.org:/pub/scm/linux/kernel/git/davem/net-2.6
+
+commit d0549382da9997834ce65e489d9dbdc4b4693a2b
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Oct 28 03:41:59 2009 -0700
+
+    cnic: Fix L2CTX_STATUSB_NUM offset in context memory.
+    
+    The BNX2_L2CTX_STATUSB_NUM definition needs to be changed to match
+    the recent firmware update:
+    
+    commit 078b0735881c7969aaf21469f3577831cddd9f8c
+    bnx2: Update firmware to 5.0.0.j3.
+    
+    Without the fix, bnx2 can crash intermittently in bnx2_rx_int() when
+    iSCSI is enabled.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c05e85a06e376f6b6d59e71e5333d707e956d78b
+Author: David S. Miller <davem@davemloft.net>
+Date:   Mon Oct 12 23:18:35 2009 -0700
+
+    cnic: Need to include net/ip6_checksum.h
+    
+    drivers/net/cnic.c: In function 'cnic_init_storm_conn_bufs':
+    drivers/net/cnic.c:1757: error: implicit declaration of function 'csum_ipv6_magic'
+    
+    Reported-by: Stephen Rothwell <sfr@canb.auug.org.au>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 71034ba845c9ff219373066f904286c0b7506922
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Sat Oct 10 13:46:59 2009 +0000
+
+    cnic: Add main functions to support bnx2x devices.
+    
+    Add iSCSI support for bnx2x devices.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Shmulik Ravid - Rabinovitz <shmulikr@broadcom.com>
+    Acked-by: Eilon Greenstein <eilong@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e251306556d30c9c678feca60204acaaa0784cbd
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Sat Oct 10 13:46:58 2009 +0000
+
+    cnic: Add bnx2x data structures.
+    
+    Add hardware and software structures for bnx2x devices.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Acked-by: Eilon Greenstein <eilong@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 86b53606ebec06b16be81c30fabdf8decc2be6b2
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Sat Oct 10 13:46:57 2009 +0000
+
+    cnic: Refactor some code.
+    
+    Refactor ring init. code for subsequent 10G patches.  Also add rtnl_lock()
+    in cnic_uio_open() to prevent race condition with netdev events.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6053bbf7bbdbb2c94547f830ad07636c17d7024e
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Fri Oct 2 11:03:28 2009 -0700
+
+    cnic: Fix NETDEV_UP event processing.
+    
+    This fixes the problem of not handling the NETDEV_UP event properly
+    during hot-plug or modprobe of bnx2 after cnic.  The handling was
+    skipped by mistakenly using "else if" to check for the event.
+    
+    Also update version to 2.0.1.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6ef57a0ea77e7bf4123a06da895a0e26312b5737
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Mon Sep 21 15:39:37 2009 +0000
+
+    cnic: Shutdown iSCSI ring during uio_close.
+    
+    The iSCSI ring should be shutdown during uio_close instead of uio_open
+    for proper operations.  This fixes the problem of the ring getting
+    stuck intermittently.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6cdee2f96a97f6da26bd3759c3f8823332fbb438
+Merge: 0625491 2fbd3da
+Author: David S. Miller <davem@davemloft.net>
+Date:   Wed Sep 2 00:32:56 2009 -0700
+
+    Merge branch 'master' of master.kernel.org:/pub/scm/linux/kernel/git/davem/net-2.6
+    
+    Conflicts:
+    	drivers/net/yellowfin.c
+
+commit 5e9b2dbfcbc9b180a0064d8a473a4652ee99c9ad
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Aug 26 09:49:23 2009 +0000
+
+    cnic: Put uio init in separate function.
+    
+    This will allow the 10G iSCSI code to reuse the function.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ec0248ea35f6e1fc7426f377a7df071d997bdedd
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Wed Aug 26 09:49:22 2009 +0000
+
+    cnic: Put rx/tx ring allocation in separate function.
+    
+    This will allow the 10G iSCSI code to reuse the function.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 7fc1ece40704b150477e548a7a98d285cc418790
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Fri Aug 14 15:49:47 2009 +0000
+
+    cnic: Fix locking in init/exit calls.
+    
+    The slow path ulp_init and ulp_exit calls to the bnx2i driver
+    are sleepable calls and therefore should not be protected using
+    rcu_read_lock.  Fix it by using mutex and refcount during these
+    calls.  cnic_unregister_driver() will now wait for the refcount
+    to go to zero before completing the call.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 681dbd710779e8b8d5bae926f6b11f30df70638b
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Fri Aug 14 15:49:46 2009 +0000
+
+    cnic: Fix locking in start/stop calls.
+    
+    The slow path ulp_start and ulp_stop calls to the bnx2i driver
+    are sleepable calls and therefore should not be protected using
+    rcu_read_lock.  Fix it by using mutex and setting a bit during
+    these calls.  cnic_unregister_device() will now wait for the bit
+    to clear before completing the call.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a3059b12adae868c42629ecf058a94195ef1e958
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Fri Aug 14 15:49:44 2009 +0000
+
+    cnic: Refine registration with bnx2.
+    
+    Register and unregister with bnx2 during NETDEV_UP and NETDEV_DOWN
+    events.  This simplifies the sequence of events and allows locking
+    fixes in the next patch.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Reviewed-by: Benjamin Li <benli@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 64c6460875957502541a4ba30835ac625a0bee79
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Fri Aug 14 15:49:43 2009 +0000
+
+    cnic: Fix symbol_put_addr() panic on ia64.
+    
+    When the cnic driver tries to grab a symbol from bnx2 when bnx2 is
+    running init code, symbol_get() will succeed but symbol_put_addr()
+    will hit BUG() a moment later.  module_text_address() fails because
+    bnx2 is still in init code.
+    
+    This is fixed by using symbol_put() instead which does the exact
+    opposite of symbol_get().
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6d7760a88c25057c2c2243e5dfe2d731064bd31d
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Mon Jul 27 11:25:58 2009 -0700
+
+    cnic: Fix ISCSI_KEVENT_IF_DOWN message handling.
+    
+    When a net device goes down or when the bnx2i driver is unloaded,
+    the code was not generating the ISCSI_KEVENT_IF_DOWN message
+    properly and this could cause the userspace driver to crash.
+    
+    This is fixed by sending the message properly in the shutdown path.
+    cnic_uio_stop() is also added to send the message when bnx2i is
+    unregistering.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e2ee3616bc334ab51e68aad6905761ca97f35559
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Sat Jun 13 17:43:02 2009 -0700
+
+    cnic: Fix __symbol_get() build error.
+    
+    Ingo molnar <mingo@elte.hu> reported the error
+    
+    drivers/net/cnic.c:2520: error: implicit declaration of function ‘__symbol_get’
+    
+    when CONFIG_MODULES is not defined.  Fix by using symbol_get() instead.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Signed-off-by: James Bottomley <James.Bottomley@HansenPartnership.com>
+
+commit 7cbdca23c8a4e6d007b62c9136ba0e5f86e069d0
+Author: James Bottomley <James.Bottomley@HansenPartnership.com>
+Date:   Sat Jun 13 15:51:08 2009 -0500
+
+    Revert "[SCSI] cnic: fix error: implicit declaration of function ‘__symbol_get’"
+    
+    This reverts commit bc3bf8fd330ce981ce632a1a4a283eee46838f32.
+    
+    All the commit did was add a second #include of <linux/module.h> which is
+    the wrong fix.
+    
+    Signed-off-by: James Bottomley <James.Bottomley@HansenPartnership.com>
+
+commit bc3bf8fd330ce981ce632a1a4a283eee46838f32
+Author: Ingo Molnar <mingo@elte.hu>
+Date:   Sat Jun 13 08:29:33 2009 +0200
+
+    [SCSI] cnic: fix error: implicit declaration of function ‘__symbol_get’
+    
+     drivers/net/cnic.c: In function ‘init_bnx2_cnic’:
+     drivers/net/cnic.c:2520: error: implicit declaration of function ‘__symbol_get’
+     drivers/net/cnic.c:2520: warning: assignment makes pointer from integer without a cast
+     make[1]: *** [drivers/net/cnic.o] Error 1
+     make: *** [drivers/net/cnic.o] Error 2
+    
+    Caused by not including linux/module.h
+    
+    Signed-off-by: Ingo Molnar <mingo@elte.hu>
+    Signed-off-by: James Bottomley <James.Bottomley@HansenPartnership.com>
+
+commit faea56c9bb44f539da1ae0194184873fc2720b20
+Author: Randy Dunlap <randy.dunlap@oracle.com>
+Date:   Fri Jun 12 11:43:48 2009 -0700
+
+    [SCSI] cnic: fix undefined reference to `ip6_route_output'
+    
+    Fix cnic build for case of CONFIG_INET=n.
+    Fix cnic build for case of CONFIG_IPV6=m and CONFIG_CNIC=y.
+    
+    Fixes these build errors:
+    
+    cnic.c:(.text+0x236a1d): undefined reference to `ip_route_output_key'
+    cnic.c:(.text+0x15a8e8): undefined reference to `ip6_route_output'
+    
+    Signed-off-by: Randy Dunlap <randy.dunlap@oracle.com>
+    Signed-off-by: James Bottomley <James.Bottomley@HansenPartnership.com>
+
+commit a463696039f7097ce87c21db3cf5c16cdcb3850d
+Author: Michael Chan <mchan@broadcom.com>
+Date:   Mon Jun 8 18:14:43 2009 -0700
+
+    [SCSI] cnic: Add new Broadcom CNIC driver.
+    
+    The CNIC driver controls BNX2 hardware rings and resources used by
+    iSCSI.  Most hardware resources for iSCSI are separate from those
+    used for ethernet networking.
+    
+    iSCSI uses a separate MAC address and IP address.  The CNIC driver
+    creates a UIO interface to handle the non-offloaded packets such as
+    ARP, etc in userspace.
+    
+    Signed-off-by: Michael Chan <mchan@broadcom.com>
+    Acked-by: David S. Miller <davem@davemloft.net>
+    Signed-off-by: James Bottomley <James.Bottomley@HansenPartnership.com>

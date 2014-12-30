@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2-2.78.25
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2-2.78.25/ChangeLog
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2-2.78.25/README.TXT
+END
+RELEASE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2-2.78.25/RELEASE.TXT
+END
+ChangeLog-cnic
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2-2.78.25/ChangeLog-cnic
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2-2.78.25/LICENSE
+END

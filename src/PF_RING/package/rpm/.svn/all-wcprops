@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ntop/!svn/ver/6905/trunk/PF_RING/package/rpm
+END
+pfring.spec.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ntop/!svn/ver/6905/trunk/PF_RING/package/rpm/pfring.spec.in
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ntop/!svn/ver/5630/trunk/PF_RING/package/rpm/configure.in
+END
+rpm-sign.exp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ntop/!svn/ver/6058/trunk/PF_RING/package/rpm/rpm-sign.exp
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ntop/!svn/ver/5630/trunk/PF_RING/package/rpm/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ntop/!svn/ver/6058/trunk/PF_RING/package/rpm/Makefile.in
+END

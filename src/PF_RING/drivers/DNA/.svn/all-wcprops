@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ntop/!svn/ver/6904/trunk/PF_RING/drivers/DNA
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ntop/!svn/ver/6904/trunk/PF_RING/drivers/DNA/Makefile
+END
+README.DNA
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ntop/!svn/ver/5423/trunk/PF_RING/drivers/DNA/README.DNA
+END
+README.LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ntop/!svn/ver/4859/trunk/PF_RING/drivers/DNA/README.LICENSE
+END

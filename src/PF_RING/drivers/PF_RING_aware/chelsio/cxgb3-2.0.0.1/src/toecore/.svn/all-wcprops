@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore
+END
+offload.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/offload.c
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/version.h
+END
+toedev.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toedev.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/Makefile
+END
+toe_bonding.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toe_bonding.h
+END
+offload.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/offload.h
+END
+toe_compat.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toe_compat.h
+END
+toe_compat_2_4.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toe_compat_2_4.h
+END
+toe_compat_2_6.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toe_compat_2_6.h
+END
+toe_iscsi.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toe_iscsi.h
+END
+toedev.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toedev.c
+END
+toe_bonding.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/toecore/toe_bonding.c
+END

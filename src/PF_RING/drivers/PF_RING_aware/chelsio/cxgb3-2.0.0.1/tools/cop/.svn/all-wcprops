@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop
+END
+classifier.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/classifier.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/Makefile
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/error.h
+END
+ipfilter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/ipfilter.cc
+END
+opt.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/opt.c
+END
+ipfilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/ipfilter.h
+END
+cop.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/cop.cc
+END
+vector.cc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/vector.cc
+END
+cop.8
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/cop.8
+END
+offload_req.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/offload_req.h
+END
+classifier.cc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/classifier.cc
+END
+vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cop/vector.h
+END

@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ntop/!svn/ver/6833/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src
+END
+e1000_defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_defines.h
+END
+e1000_82540.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_82540.c
+END
+e1000_82541.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_82541.c
+END
+e1000_82542.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_82542.c
+END
+e1000_82543.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_82543.c
+END
+e1000.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000.h
+END
+e1000_82541.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_82541.h
+END
+kcompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/kcompat.c
+END
+e1000_82543.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_82543.h
+END
+kcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/kcompat.h
+END
+e1000_mac.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_mac.c
+END
+e1000_nvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_nvm.c
+END
+e1000_param.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_param.c
+END
+e1000_phy.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_phy.c
+END
+e1000_mac.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_mac.h
+END
+e1000_nvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_nvm.h
+END
+e1000_phy.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_phy.h
+END
+e1000_regs.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_regs.h
+END
+e1000_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_ethtool.c
+END
+e1000_osdep.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_osdep.h
+END
+e1000_hw.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_hw.h
+END
+Module.supported
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/Module.supported
+END
+e1000_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/6072/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_main.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/Makefile
+END
+kcompat_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/kcompat_ethtool.c
+END
+e1000_manage.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_manage.c
+END
+e1000_manage.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_manage.h
+END
+load_dna_driver.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/6243/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/load_dna_driver.sh
+END
+e1000_dna.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/6833/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_dna.c
+END
+e1000_api.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_api.c
+END
+e1000_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/5276/trunk/PF_RING/drivers/DNA/e1000-8.0.35-DNA/src/e1000_api.h
+END

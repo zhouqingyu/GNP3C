@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc
+END
+fc_npiv.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_npiv.c
+END
+fc_libfc.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_libfc.c
+END
+fc_lport.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_lport.c
+END
+fc_disc.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_disc.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/Makefile
+END
+fc_libfc.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_libfc.h
+END
+fc_rport.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_rport.c
+END
+fc_exch.c
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_exch.c
+END
+fc_fcp.c
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_fcp.c
+END
+fc_elsct.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_elsct.c
+END
+fc_frame.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/fclibs-2.0.3/libfc/fc_frame.c
+END

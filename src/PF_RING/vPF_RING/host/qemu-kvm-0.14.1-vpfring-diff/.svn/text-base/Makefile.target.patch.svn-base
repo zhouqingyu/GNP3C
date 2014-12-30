@@ -1,0 +1,14 @@
+--- qemu-kvm-0.14.1/Makefile.target	2011-05-11 15:29:46.000000000 +0200
++++ qemu-kvm-0.14.1-vpfring-diff/Makefile.target	2011-05-26 00:30:57.000000000 +0200
+@@ -201,6 +201,11 @@
+ obj-$(CONFIG_NO_PCI) += pci-stub.o
+ obj-$(CONFIG_PCI) += pci.o
+ obj-$(CONFIG_VIRTIO) += virtio-blk.o virtio-balloon.o virtio-net.o virtio-serial-bus.o
++
++# vNPlug & vPFRing
++obj-y += vnplug-ctrl.o vnplug-dev.o vpfring.o
++LIBS+=-lpfring
++
+ obj-$(CONFIG_VIRTIO_PCI) += virtio-pci.o
+ obj-y += vhost_net.o
+ obj-$(CONFIG_VHOST_NET) += vhost.o

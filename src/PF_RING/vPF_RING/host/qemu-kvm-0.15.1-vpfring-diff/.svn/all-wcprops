@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ntop/!svn/ver/5249/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.15.1-vpfring-diff
+END
+Makefile.target.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5242/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.15.1-vpfring-diff/Makefile.target.patch
+END
+virtio-pci.c.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/4969/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.15.1-vpfring-diff/virtio-pci.c.patch
+END

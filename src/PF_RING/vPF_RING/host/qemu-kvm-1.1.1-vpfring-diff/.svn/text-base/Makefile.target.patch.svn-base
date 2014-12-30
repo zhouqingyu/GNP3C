@@ -1,0 +1,14 @@
+--- qemu-kvm-1.1.1/Makefile.target	2012-07-16 09:52:03.000000000 +0200
++++ qemu-kvm-1.1.1-vpfring-diff/Makefile.target	2012-09-04 01:13:41.000000000 +0200
+@@ -188,6 +188,11 @@
+ obj-$(CONFIG_VIRTIO) += virtio-scsi.o
+ obj-y += vhost_net.o
+ obj-$(CONFIG_VHOST_NET) += vhost.o
++
++# vNPlug & vPFRing
++obj-y += vnplug-ctrl.o vnplug-dev.o vpfring.o
++LIBS+=-lpfring -lpcap
++
+ obj-$(CONFIG_REALLY_VIRTFS) += 9pfs/virtio-9p-device.o
+ obj-$(CONFIG_KVM) += kvm.o kvm-all.o
+ obj-$(CONFIG_NO_KVM) += kvm-stub.o

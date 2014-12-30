@@ -1,0 +1,271 @@
+                           Installation Notes
+                     Broadcom NetXtremeII Linux Drivers
+                                09/26/2011
+
+                          Broadcom Corporation
+                         5300 California Avenue,
+                            Irvine, CA 92617
+
+               Copyright (c) 2004 - 2011 Broadcom Corporation
+                           All rights reserved
+
+
+Table of Contents
+=================
+
+  Introduction
+  Limitations
+  Packaging
+  Installing Source RPM Package
+  Building Driver From TAR File
+  Unloading and Removing Driver
+ 
+
+Introduction
+============
+
+This file describes the installation procedures for the following
+Broadcom Linux drivers:
+
+- bnx2 driver for the Broadcom NetXtreme II BCM5706/BCM5708/5709/5716
+  10/100/1000/2500/10000 Mbps PCIX/PCIE Ethernet Network Controller.
+
+- bnx2x driver for the Broadcom NetXtremeII BCM57710/BCM57711/BCM57711E/BCM57712
+  10/100/1000/2500/10000 Mbps PCIE Ethernet Network Controller.
+
+- cnic driver that supports additional features required by the bnx2i iSCSI
+  offload driver, and bnx2fc FCoE offload driver.
+
+
+Limitations
+===========
+
+The current versions of the drivers have been tested on 2.4.x kernels starting
+from 2.4.24 and all 2.6.x kernels. The driver may not compile on kernels
+older than 2.4.24. Testing is concentrated on i386 and x86_64 architectures.
+Only limited testing has been done on some other architectures.
+
+Minor changes to some source files and Makefile may be needed on some
+kernels.
+
+Additionally, the Makefile will not compile the cnic driver on kernels
+older than 2.6.16. iSCSI offload is only supported on 2.6.16 and newer
+kernels. FCoE offload is only supported on 2.6.32 and newer kernels.
+
+
+Packaging
+=========
+
+The driver is released in two packaging formats: source RPM and compressed tar
+formats. The file name for the source RPM is:
+
+netxtreme2-<version>.src.rpm
+
+The file name for the tar archive is:
+netxtreme2-<version>.tar.gz.
+
+Identical source files to build the drivers are included in both packages.
+
+Following is a list of files included - 
+
+a) netxtreme2-<version>.src.rpm - NetXtreme II L2/cnic/bnx2fc/libfc/libfcoe
+		driver source RPM
+b) netxtreme2-<version>.tar.gz - tar zipped NetXtreme II
+		L2/cnic/bnx2fc/libfc/libfcoe driver source
+c) INSTALL.TXT - This file
+d) README.<driver>.TXT - driver specific readme instructions, 
+		where driver is bnx2, bnx2x, bnx2i, bnx2fc.
+e) RELEASE.<driver>.TXT - release information text providing list of bug fixes
+		and enhancement for each driver.
+
+Installing Source RPM Package
+=============================
+
+The following are general guidelines for installing the driver.
+
+1. Install the source RPM package:
+
+   rpm -ivh netxtreme2-<version>.src.rpm
+
+2. CD to the RPM path and build the binary driver for your kernel:
+
+   cd /usr/src/{redhat,OpenLinux,turbo,packages,rpm ..}
+	(For RHEL 6.0 and above, cd ~/rpmbuild )
+
+   rpm -bb SPECS/netxtreme2.spec
+
+or
+
+   rpmbuild -bb SPECS/netxtreme2.spec (for RPM version 4.x.x)
+
+Note that the RPM path is different for different Linux distributions.
+
+The driver will be compiled for the running kernel by default. To build
+the driver for a kernel different than the running one, specify the
+kernel by defining it in KVER:
+
+   rpmbuild -bb SPECS/netxtreme2.spec --define "KVER <kernel version>"
+
+where <kernel version> in the form of 2.x.y-z is the version of another
+kernel that is installed on the system.
+
+3. Install the newly built package (driver and man page):
+
+   rpm -ivh RPMS/<arch>/netxtreme2-<version>.<arch>.rpm
+
+where <arch> is the machine architecture such as i386:
+
+   rpm -ivh RPMS/i386/netxtreme2-<version>.i386.rpm
+
+Note that the --force option may be needed on some Linux distributions
+if conflicts are reported.
+
+The drivers will be installed in the following path:
+
+2.4.x kernels:
+
+    /lib/modules/<kernel_version>/kernel/drivers/net/bnx2.o
+    /lib/modules/<kernel_version>/kernel/drivers/net/bnx2x.o
+
+2.6.0 kernels:
+
+    /lib/modules/<kernel_version>/kernel/drivers/net/bnx2.ko
+    /lib/modules/<kernel_version>/kernel/drivers/net/bnx2x.ko
+
+2.6.16 and newer kernels:
+
+    /lib/modules/<kernel_version>/kernel/drivers/net/bnx2.ko
+    /lib/modules/<kernel_version>/kernel/drivers/net/bnx2x.ko
+    /lib/modules/<kernel_version>/kernel/drivers/net/cnic.ko
+
+Newer RHEL and SLES distros:
+
+    /lib/modules/<kernel_version>/updates/bnx2.ko
+    /lib/modules/<kernel_version>/updates/cnic.ko
+    /lib/modules/<kernel_version>/updates/bnx2x.ko
+    /lib/modules/<kernel_version>/updates/bnx2i.ko
+    /lib/modules/<kernel_version>/updates/bnx2fc.ko
+
+4. Unload existing driver if necessary:
+
+   rmmod bnx2
+   rmmod bnx2x
+
+If the cnic driver is loaded, it should also be unloaded along with dependent
+drivers:
+
+   rmmod bnx2fc
+   rmmod bnx2i
+   rmmod cnic
+
+5. Load the bnx2 driver for the BCM5706/BCM5708/5709/5716 devices:
+
+   insmod bnx2.o
+or
+   insmod bnx2.ko (on 2.6.x kernels)
+or
+   modprobe bnx2
+
+To load the bnx2x driver for the BCM57710/BCM57711/BCM57711E/BCM57712 devices:
+
+   insmod bnx2x.o
+or
+   insmod bnx2x.ko (on 2.6.x kernels)
+or
+   modprobe bnx2x
+
+To load the cnic driver:
+
+   insmod cnic.ko
+or
+   modprobe cnic
+
+To load the bnx2i driver:
+
+   insmod bnx2i.ko
+or
+   modprobe bnx2i
+   service iscsid restart (Please refer REDAME.bnx2i.txt for more details 
+                          about iSCSI operation)
+
+To load the bnx2fc driver for BCM57712 device:
+
+   insmod bnx2fc.ko
+or
+   modprobe bnx2fc
+   service fcoe start (Please refer README.bnx2fc.txt for more details about 
+                       FCoE operation)
+   
+Note that the inbox kernel may have an older version of bnx2, bnx2x and cnic
+driver.  It is important for FCoE offload user to unload these inbox versions
+before attempting to load bnx2fc driver. There are 2 options to reach the
+desired goal,
+   a) Reboot the server
+                OR
+   b) If already loaded, unload inbox bnx2, bnx2x, cnic drivers and load newly
+      installed version from netxtreme2-foce package using 'modprobe <DRV-NAME>'
+
+NOTE: Driver upgrade (rpm -Uvh) is not supported.
+NOTE: On SLES 11, change "allow_unsupported_modules" parameter value of
+      /etc/modprobe.d/unsupport-modules' from 0 to 1, until bnx2fc driver
+      is inbox. Failing to do so will not load bnx2fc.
+
+6. To configure network protocol and address, refer to various Linux
+documentations.
+
+
+Building Driver From TAR File
+=============================
+
+The following are general guidelines for installing the driver.
+
+1. Create a directory and extract the files:
+
+   tar xvzf netxtreme2-<version>.tar.gz
+
+2. Build the drivers as a loadable module for the running kernel:
+
+   make
+
+The driver will be compiled for the running kernel by default. To build
+the driver for a kernel different than the running one, specify the
+kernel by defining it in KVER:
+
+  make KVER=<kernel version>
+
+where <kernel version> in the form of 2.x.y-z is the version of another
+kernel that is installed on the system.
+
+3. Test the driver by loading it (Same procedures as described in the 
+   Source RPM section above).
+
+4. Install the driver and man page:
+
+   make install
+
+See RPM instructions above for the location of the installed driver.
+
+5. To configure network protocol and address, refer to various Linux
+documentations.
+
+Unloading and Removing Driver
+=============================
+
+If the driver was installed using rpm, do the following to remove it:
+
+rpm -e nextreme2
+
+Note - this will remove libfc2, libfcoe2, bnx2, bnx2x and cnic modules as well
+
+If the driver was installed using make install from the tar file, the drivers
+have to be manually deleted from the system. Refer to the section
+"Installing Source RPM Package" for the location of the installed driver.
+
+1. rmmod <driver>
+
+2. delete <driver>.ko from location given in section "Installing Source RPM Package" 
+
+3. depmod -a
+	
+**The kernel will now be back to original state prior to instalation from tar file.
+  You may now reload previous module versions if necessary.

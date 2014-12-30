@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16
+END
+RELEASE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/RELEASE.TXT
+END
+ChangeLog-cnic
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/ChangeLog-cnic
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/LICENSE
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/ChangeLog
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/5421/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.0.36/bnx2-2.70.16/README.TXT
+END

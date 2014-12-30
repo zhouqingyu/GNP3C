@@ -1,0 +1,6 @@
+0x00000000	cnic_register_driver	/home/blackout/netxtreme2-7.0.36/bnx2-2.70.16/src/cnic	EXPORT_SYMBOL
+0x00000000	bnx2_cnic_probe2	/home/blackout/netxtreme2-7.0.36/bnx2-2.70.16/src/bnx2	EXPORT_SYMBOL
+0x00000000	cnic_dump_kcq	/home/blackout/netxtreme2-7.0.36/bnx2-2.70.16/src/cnic	EXPORT_SYMBOL
+0x00000000	cnic_register_driver2	/home/blackout/netxtreme2-7.0.36/bnx2-2.70.16/src/cnic	EXPORT_SYMBOL
+0x00000000	cnic_unregister_driver	/home/blackout/netxtreme2-7.0.36/bnx2-2.70.16/src/cnic	EXPORT_SYMBOL
+0x00000000	cnic_unregister_driver2	/home/blackout/netxtreme2-7.0.36/bnx2-2.70.16/src/cnic	EXPORT_SYMBOL

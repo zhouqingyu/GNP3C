@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/4840/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw
+END
+vnplug-dev.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/4838/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vnplug-dev.c
+END
+vpfring.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/4840/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vpfring.c
+END
+vnplug-dev.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/4838/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vnplug-dev.h
+END
+vnplug-ctrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/4838/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vnplug-ctrl.c
+END
+vnplug.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/4838/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vnplug.h
+END
+vpfring.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/4838/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vpfring.h
+END
+vnplug-ctrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/4838/trunk/PF_RING/vPF_RING/host/qemu-kvm-0.14.1-vpfring-diff/hw/vnplug-ctrl.h
+END

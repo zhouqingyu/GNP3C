@@ -1,0 +1,67 @@
+This document describes the tunable parameters of the Chelsio TCP Offload
+Module.  These parameters can be found under /proc/sys/toe/toe?_tom/, where
+'?' is the number of the TOE device to be configured, e.g., toe0.  The current
+values of the parameters can be read by 'cat'ing the corresponding file, and
+can be modified by writing the new value to the files, e.g., using echo(1).
+
+- max_host_sndbuf: A connection's send buffer is divided in two parts, one
+  residing in on-card memory and the rest in the host's RAM.  This parameter
+  determines the size of the latter part (max_tx_pages, described below,
+  determines the first part).  The RAM portion of the send buffer acts as a
+  staging area for data to be shipped to the TOE and in general needs to be
+  only modestly sized.  The default value is 32K.
+
+- max_tx_pages: This determines the maximum number of on-chip TX memory pages
+  that can be given to each connection.  Together with max_host_sndbuf
+  (described above) this determines the total send buffer size.  The system
+  will automatically allocate pages to connections so that no connection gets
+  more than max_tx_pages but under memory pressure a connection can have
+  significantly fewer pages.  The minimum value is 2 pages and this is also the
+  default.
+
+- tx_hold_thres: This parameter is used to decide whether a partially filled
+  TX buffer should be immediately forwarded to the TOE or whether it should be
+  kept to allow more data to accumulate.  Forwarding immediately may be
+  beneficial for latency but waiting to build fuller buffers reduces the
+  number of transfers between the host and the TOE and improves CPU
+  utilization.  A partially filled buffer is immediately forwarded if the
+  number of unacknowledged data for the connection is less than tx_hold_thres.
+  The default value is 0.
+
+- rx_credit_thres: Determines how many RX credits (number of bytes read since
+  the previous credit return) must have accumulated for a connection before
+  we return them to the TOE.  The default is 4K.
+
+- min_newconn_tx_pages: This is the number of free TX pages that must exist at
+  the time a connection is considered for offloading in order for it to be
+  offloaded.  This parameter is part of the TOE's admission control and
+  defaults to 16.  A value of 0 effectively disables this test.
+
+- auto_passv_open: If set this enables AUTO mode for passive opens.  It
+  defaults to 0.
+
+- mss: Determines the maximum amount of payload shipped to the TOE in each
+  packet.  It defaults to the maximum allowed by the TOE configuration,
+  usually 16K.
+
+- del_ack: Determines whether delayed ACK is enabled.  Defaults to 1 (on) and
+  changing it affects only new connections.  Note that turning off delayed
+  ACKs can be detrimental to performance if communicating with NICs.
+
+- max_conn: Maximum number of offloaded connections (excludes listeners).  At
+  the moment this limit is considered only during active opens.  This
+  parameter is part of the TOE's admission control and defaults to -1,
+  which is unlimited.
+
+- soft_backlog_limit: If 0 (default) a listening socket's accept queue limit is
+  hard and any connections established when the accept queue is full are reset.
+  In this mode new connection attempts are accepted as long as there is space
+  in the SYN queue, regardless of the state of the accept queue at the time.
+  If 1 the limit is soft and established connections will be added to the
+  accept queue even if they overflow it, however new connection attempts will
+  be accepted only if the accept queue is under its limit.
+
+- tx_lease_time: The time in milliseconds that a connection is granted
+  uninterrupted use of newly allocated TX pages (assuming it has data to
+  transmit continously during that time).  This determines the quantum of the
+  TX page scheduler.  It defaults to 10.

@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3
+END
+mv88e1xxx.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/mv88e1xxx.c
+END
+trace.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/trace.h
+END
+ael1002.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/ael1002.c
+END
+firmware_exports.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/firmware_exports.h
+END
+cxgb3_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_main.c
+END
+cxgb3_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_defs.h
+END
+linux_2_4_compat_workqueue.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/linux_2_4_compat_workqueue.c
+END
+cxgb3_ctl_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_ctl_defs.h
+END
+cxgb3_compat.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_compat.h
+END
+linux_2_4_compat_workqueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/linux_2_4_compat_workqueue.h
+END
+sge_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/sge_defs.h
+END
+t3_hw.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/t3_hw.c
+END
+adapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/adapter.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/Makefile
+END
+t3cdev.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/t3cdev.h
+END
+xgmac.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/xgmac.c
+END
+cxgb3_offload.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_offload.c
+END
+l2t.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/l2t.c
+END
+cxgb3_offload.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_offload.h
+END
+cxgb3_ioctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/cxgb3_ioctl.h
+END
+regs.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/regs.h
+END
+l2t.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/l2t.h
+END
+linux_2_4_compat.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/linux_2_4_compat.c
+END
+vsc8211.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/vsc8211.c
+END
+vsc7323.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/vsc7323.c
+END
+aq100x.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/aq100x.c
+END
+linux_2_4_compat.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/linux_2_4_compat.h
+END
+tcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/tcb.h
+END
+sge.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/sge.c
+END
+osdep.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/osdep.h
+END
+tn1010.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/tn1010.c
+END
+mc5.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/mc5.c
+END
+t3_firmware.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/t3_firmware.h
+END
+t3_cpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/t3_cpl.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/version.h
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/common.h
+END
+trace.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/src/cxgb3/trace.c
+END

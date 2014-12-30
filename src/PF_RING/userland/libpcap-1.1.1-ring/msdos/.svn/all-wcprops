@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos
+END
+readme.dos
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/readme.dos
+END
+pktdrvr.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/pktdrvr.h
+END
+common.dj
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/common.dj
+END
+makefile.wc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/makefile.wc
+END
+ndis2.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/ndis2.h
+END
+pkt_rx0.asm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/pkt_rx0.asm
+END
+makefile.dj
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/makefile.dj
+END
+pkt_rx1.s
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/pkt_rx1.s
+END
+ndis_0.asm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/ndis_0.asm
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/makefile
+END
+pktdrvr.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/pktdrvr.c
+END
+bin2c.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/bin2c.c
+END
+ndis2.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/msdos/ndis2.c
+END

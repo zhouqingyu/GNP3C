@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src
+END
+ixgbe_dcb_82599.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb_82599.h
+END
+ixgbe_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_api.h
+END
+kcompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/kcompat.c
+END
+ixgbe_dcb_nl.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb_nl.c
+END
+ixgbe_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5968/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_main.c
+END
+kcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/6059/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/kcompat.h
+END
+ixgbe.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe.h
+END
+ixgbe_mbx.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_mbx.c
+END
+ixgbe_dcb.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb.c
+END
+ixgbe_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_common.c
+END
+ixgbe_mbx.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_mbx.h
+END
+ixgbe_procfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_procfs.c
+END
+ixgbe_dcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb.h
+END
+ixgbe_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_common.h
+END
+ixgbe_param.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_param.c
+END
+ixgbe_phy.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_phy.c
+END
+ixgbe_sriov.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_sriov.c
+END
+ixgbe_ptp.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_ptp.c
+END
+ixgbe_phy.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_phy.h
+END
+ixgbe_lib.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_lib.c
+END
+ixgbe_sysfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_sysfs.c
+END
+ixgbe_sriov.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_sriov.h
+END
+Module.supported
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/Module.supported
+END
+ixgbe_fcoe.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_fcoe.c
+END
+kcompat_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/kcompat_ethtool.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/Makefile
+END
+ixgbe_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_ethtool.c
+END
+ixgbe_osdep.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_osdep.h
+END
+ixgbe_fcoe.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_fcoe.h
+END
+ixgbe_type.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5968/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_type.h
+END
+ixgbe_82598.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_82598.c
+END
+ixgbe_82599.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_82599.c
+END
+ixgbe_x540.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_x540.c
+END
+ixgbe_82598.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_82598.h
+END
+ixgbe_82599.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_82599.h
+END
+ixgbe_x540.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_x540.h
+END
+ixgbe_dcb_82598.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb_82598.c
+END
+ixgbe_dcb_82599.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb_82599.c
+END
+ixgbe_api.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5968/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_api.c
+END
+ixgbe_dcb_82598.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/src/ixgbe_dcb_82598.h
+END

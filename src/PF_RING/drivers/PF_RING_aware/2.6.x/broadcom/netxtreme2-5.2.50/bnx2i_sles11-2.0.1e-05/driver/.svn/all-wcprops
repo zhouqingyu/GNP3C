@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/Makefile
+END
+bnx2i_ioctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i_ioctl.c
+END
+bnx2i_iscsi.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i_iscsi.c
+END
+57xx_iscsi_hsi.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/57xx_iscsi_hsi.h
+END
+bnx2i_ioctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i_ioctl.h
+END
+bnx2i_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i_init.c
+END
+bnx2i.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i.h
+END
+57xx_iscsi_constants_bnx2i.h
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/57xx_iscsi_constants_bnx2i.h
+END
+bnx2i_hwi.c
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i_hwi.c
+END
+bnx2i_sysfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2i_sles11-2.0.1e-05/driver/bnx2i_sysfs.c
+END

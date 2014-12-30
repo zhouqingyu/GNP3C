@@ -1,0 +1,358 @@
+                    ****************************************
+                                  RELEASE NOTES
+
+                    ****************************************
+
+                       Chelsio T3 Network Driver for Linux
+
+
+                                      
+Version : 2.0.0.1 
+Date    : 08/23/2012
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Fixed: version string in the generated RPM.
+
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 10420: NFS connectivity toggles, while running "iozone -a" on the mounted 
+         share
+- 10741: Traffic is not running on multiple slaves of bond mode=2 with policy 
+         layer3+4 
+
+
+
+================================================================================
+================================================================================
+                       
+                       
+Version : 2.0.0.0 
+Date    : 08/10/2012
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Fixed: t3_tom and t4_tom compatibilty issues on supported platforms.
+- Added: Support for RHEL6.3, RHEL5.8.
+- Added: TOE Bonding support for RHEL5.7, RHEL5.8.
+
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 10420: NFS connectivity toggles, while running "iozone -a" on the mounted 
+         share
+- 10741: Traffic is not running on multiple slaves of bond mode=2 with policy 
+         layer3+4 
+
+
+
+================================================================================
+================================================================================
+                   
+                   
+Version : 1.6.0.3 
+Date    : 03/22/2012
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Fixed: Compilation issues observed on RHEL4.7 and kernels 2.6.23 - 2.6.26.
+- Fixed: Error messages observed while runnig ifup-local in RHEL6.
+- Fixed: Boot Image Loading using cxgbtool.
+- Fixed: Unable to establish a Tx Connection if there is no ARP entry for the 
+         PEER.
+- Added: Support for RHEL6.1, RHEL6.2, RHEL5.7.
+- Added: TOE Bonding support for RHEL6.1 and RHEL6.2.
+
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 10420: NFS connectivity toggles, while running "iozone -a" on the mounted 
+         share
+- 10741: Traffic is not running on multiple slaves of bond mode=2 with policy 
+         layer3+4
+
+
+
+================================================================================
+================================================================================
+                                               
+                                               
+Version : 1.5.2.0 
+Date    : 12/02/2011
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Added die notifier to bring the link down in case of kernel panic.
+- Added support for firmware and driver Watchdog.
+- Updated Firmware to 7.12.0.
+- Added support for RHEL 4.x
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 2716: Unable to compile chiscsi-target-5.0.0059.3 in offload mode with 
+        cxgb3toe-1.5.2.0
+- 960: Running iozone on nfs shared directory mounted using proto UDP stals
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.5.1.6
+Date    : 03/04/2011
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Added support for 2.6.33, 2.6.35, 2.6.36
+- Fix Queue full/Restart mechanism on dual port 
+  adapters when multiple TX queue feature is supported
+- Added TOE bonding support for RHEL 6.0
+- Fixed 1G autonegotiation issues 
+- Fixed failure with MSI interrupt mode
+- Support for RedHat MRG-1.3 kernel
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 2716: Unable to compile chiscsi-target-5.0.0059.3 in offload mode with 
+        cxgb3toe-1.5.1.6
+-  960: Running iozone on nfs shared directory mounted using proto UDP stals
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.5.0.3
+Date    : 10/08/2010
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Added support for 2.6.32, 33, 34.
+- Added TOE bonding support for RHEL5.5
+- Bind with FW 7.11
+- Release filtering and traffic management features.
+- Fixed Twinax modules detection
+- Refactor mac layer link fault handling to clean up phy and mac layer link 
+  event management.
+- Fixed bonding oops with multiple bonding devices
+- Fixed back pressure issue seen on S304 adapters
+- Disabled dynamic selective ack when it is administratively set to 0
+- Fixed LACP support on S304 adapters
+- Updated parity error management to avoid driver soft lockups.
+
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+-  625: Low performance seen while running TCP & UDP traffic on IBM Blade Server.
+-  830: cxgb3-toe not compiling in latest linux kernel (2.6.35-5-default).
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.4.1
+Date    : Apr 2010
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Fixes for cxgbtool
+- Fix for link flap issue
+- Fix for VLAN on top of bonding in TOE mode.
+
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 12858: "modinfo cxgb3" displays the incorrect driver version if inbox OFED 
+          driver is already installed on SLES 11- 64 and 32 bit platforms
+- 12869: Unable to detach the slaves when bonded in TOE mode using
+         ifenslave -d <bondX> <ethX>
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.4
+Date    : Feb 2010
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Added support for 2.6.31, 2.6.32
+- Added auto negotiation support for 1 port 10G base-T adapters.
+- Optimizes response queue sizes to limit chip starvation
+- Added support for Traffic management and Filtering.
+  Please contact support@chelsio.com for more details.
+- Fixed VLAN over Jumbo frames connectivity issues
+- Added support for Ubuntu 9.10 platform
+- Fix potential link flap issues on 2 ports LP-CR adapters
+- Support for TX multi queues when the stack supports it.
+- Fixed rare TOM DDP crash when closing a connection.
+
+
+
+2.ERRATA (Open Issues)
+----------------------------------------
+
+- 7302: OS reports link up when TX cable is unplugged,if the peer interface is 
+        down when bringing up the DUTs interface
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.3.1
+Date    :August 2009
+================================================================================
+
+1.CHANGES
+----------------------------------------
+- Added support for S320E-LP-CR adapter.
+- Added support for N320E-G2 adapter.
+- Added support for 10G base-T adapters.
+- Fixed FCS errors seen on S302 adapters in jumbo frame mode.
+- Fix offload Tx zero copy behaviour in conjunction with non blocking writes.
+- Fixed a 1.3 regression crash in offload Rx DDP mode.
+- Fixed a potential link report error for AEL1006 and QT2045 phy based adapters.
+
+
+2.ERRATA (Open Issues)
+---------------------------------------------------------------------
+
+- N/A
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.3
+Date    : 06/03/2009
+================================================================================
+
+1.CHANGES
+----------------------------------------
+- Set up one queue only in INTx and MSI mode
+- Allows MSI-X mode even if the system allocates less vectors than requested
+- Allows package to compile on xen enabled systems
+- Fixed TOE performance issue in request-response scenario
+- Added TOE support for 2.6.29
+- Added TOE support for 2.6.30
+- The TOE driver allocates its own structure, as opposed to use existing stack 
+  structures
+- Fixed SGE RX refill scheme when HW available Rx entries are low
+- Start the SGE context timers after the queue sets have been allocated successfully.
+- Added support to dump egress context through cxgbtool
+- Added support to retrieve trace filter configuration through cxgbtool.
+- Added filtering and Traffic management - please contact the support team (
+  support@chelsio.com)
+- Poll the adapter for free list empty conditions, as opposed to getting 
+  interrupted
+- Added XOR bonding mode for TOE.
+- Fixed VLAN and bonding cohabitation in TOE mode.
+- Updated T3B2 xgmac hang workaround logic to avoid false positives
+- Avoided XGMAC back pressure issues when ports are configured down.
+- Fixed TOE TX zero copy on recent kernels
+- Fixed crash when the driver is unloaded under heavy offload traffic
+- Fixed soft lockups on driver module removal
+- Fixed a race condition in the neighbour management of offloaded connections
+- Fixed a performance issue using addresses 203.x.y.z
+- Fixed Rx FIFO pause HWM computation
+- Added RHEL4.8, 2.6.29, 2.6.30 support
+- Added early support for AEL2020 phy based adapters
+- Added early support for AQ100x phy based adapters
+- Added early support for 2 ports pci-e gen2 adapters
+- Added Firmware 7.4 support
+- Fixed RHEL3.8 build
+
+
+
+2.ERRATA
+----------------------------------------
+- N/A
+
+
+
+================================================================================
+================================================================================
+
+
+
+Version : 1.2.1
+Date    : 03/17/2009
+================================================================================
+
+1.CHANGES
+----------------------------------------
+
+- Updated README
+- Fixed compilation error which occurred as a result of a Makefile bug
+
+
+
+2.ERRATA
+----------------------------------------
+-  N/A
+
+
+
+
+
+
+
+
+********************************************************************************
+Copyright (C) 2012 Chelsio Communications. All Rights Reserved
+
+The information in this document is furnished for informational use only, is
+subject to change without notice, and should not be construed as a commitment by
+Chelsio Communications. Chelsio Communications assumes no responsibility or
+liability for any errors or inaccuracies that may appear in this document or any
+software that may be provided in association with this document. Except as
+permitted by such license, no part of this document may be reproduced, stored in
+a retrieval system,or transmitted in any form or by any means without the
+express written consent of Chelsio Communications.

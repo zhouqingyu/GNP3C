@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/version.h
+END
+ethtool-copy.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/ethtool-copy.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/Makefile
+END
+reg_defs.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/reg_defs.c
+END
+cxgbtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/cxgbtool.c
+END
+reg_defs_t3.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/reg_defs_t3.c
+END
+cxgbtool.8
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/cxgbtool.8
+END
+reg_defs_t3b.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/reg_defs_t3b.c
+END
+reg_defs_t3c.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/6108/trunk/PF_RING/drivers/PF_RING_aware/chelsio/cxgb3-2.0.0.1/tools/cxgbtool/reg_defs_t3c.c
+END

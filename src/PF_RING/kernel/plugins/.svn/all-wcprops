@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ntop/!svn/ver/5551/trunk/PF_RING/kernel/plugins
+END
+dummy_plugin.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ntop/!svn/ver/5551/trunk/PF_RING/kernel/plugins/dummy_plugin.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ntop/!svn/ver/4500/trunk/PF_RING/kernel/plugins/Makefile
+END
+dummy_plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ntop/!svn/ver/4490/trunk/PF_RING/kernel/plugins/dummy_plugin.h
+END

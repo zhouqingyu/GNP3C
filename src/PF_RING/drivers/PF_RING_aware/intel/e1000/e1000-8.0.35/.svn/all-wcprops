@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/5328/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35
+END
+SUMS
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/4945/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35/SUMS
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/4945/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35/COPYING
+END
+e1000.7
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/4945/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35/e1000.7
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/4945/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35/README
+END
+e1000.spec
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ntop/!svn/ver/4945/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35/e1000.spec
+END
+pci.updates
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/4945/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000/e1000-8.0.35/pci.updates
+END

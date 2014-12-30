@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA
+END
+ixgbe.7
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA/ixgbe.7
+END
+SUMS
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA/SUMS
+END
+ixgbe.spec
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA/ixgbe.spec
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA/COPYING
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA/README
+END
+pci.updates
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ntop/!svn/ver/6903/trunk/PF_RING/drivers/DNA/ixgbe-3.18.7-DNA/pci.updates
+END

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src
+END
+kcompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/kcompat.c
+END
+phy.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/phy.c
+END
+param.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/param.c
+END
+nvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/nvm.c
+END
+mac.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/mac.c
+END
+kcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/kcompat.h
+END
+regs.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/regs.h
+END
+phy.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/phy.h
+END
+nvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/nvm.h
+END
+mac.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/mac.h
+END
+ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/ethtool.c
+END
+80003es2lan.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/80003es2lan.c
+END
+defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/defines.h
+END
+hw.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/hw.h
+END
+80003es2lan.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/80003es2lan.h
+END
+netdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/netdev.c
+END
+82571.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/82571.c
+END
+ich8lan.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/ich8lan.c
+END
+manage.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/manage.c
+END
+Module.supported
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/Module.supported
+END
+e1000.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/e1000.h
+END
+82571.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/82571.h
+END
+ich8lan.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/ich8lan.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/Makefile
+END
+kcompat_ethtool.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/kcompat_ethtool.c
+END
+manage.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5508/trunk/PF_RING/drivers/PF_RING_aware/intel/e1000e/e1000e-2.0.0.1/src/manage.h
+END

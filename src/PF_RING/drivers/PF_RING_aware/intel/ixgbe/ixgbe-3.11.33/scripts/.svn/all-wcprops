@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/scripts
+END
+set_irq_affinity.sh
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ntop/!svn/ver/5777/trunk/PF_RING/drivers/PF_RING_aware/intel/ixgbe/ixgbe-3.11.33/scripts/set_irq_affinity.sh
+END

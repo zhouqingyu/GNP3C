@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/ntop/!svn/ver/6320/trunk/PF_RING/doc
+END
+PF_RING-UsersGuide.pages
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ntop/!svn/ver/6269/trunk/PF_RING/doc/PF_RING-UsersGuide.pages
+END
+UsersGuide.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ntop/!svn/ver/6269/trunk/PF_RING/doc/UsersGuide.pdf
+END
+svn2changelog.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ntop/!svn/ver/5775/trunk/PF_RING/doc/svn2changelog.py
+END
+UsersGuide_Russian.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ntop/!svn/ver/6320/trunk/PF_RING/doc/UsersGuide_Russian.pdf
+END

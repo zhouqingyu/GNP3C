@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ntop/!svn/ver/6059/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2
+END
+igb.7
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ntop/!svn/ver/6055/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2/igb.7
+END
+SUMS
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/6055/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2/SUMS
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/6055/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2/COPYING
+END
+igb.spec
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/6055/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2/igb.spec
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ntop/!svn/ver/6055/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2/README
+END
+pci.updates
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/6055/trunk/PF_RING/drivers/PF_RING_aware/intel/igb/igb-4.1.2/pci.updates
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src
+END
+inet_aton.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/inet_aton.c
+END
+gai_strerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/gai_strerror.c
+END
+getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/getopt.c
+END
+inet_net.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/inet_net.c
+END
+getaddrinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/getaddrinfo.c
+END
+getservent.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/getservent.c
+END
+getnetbynm.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/getnetbynm.c
+END
+getnetent.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/getnetent.c
+END
+ffs.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/ffs.c
+END
+inet_pton.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ntop/!svn/ver/4467/trunk/PF_RING/userland/libpcap-1.1.1-ring/Win32/Src/inet_pton.c
+END

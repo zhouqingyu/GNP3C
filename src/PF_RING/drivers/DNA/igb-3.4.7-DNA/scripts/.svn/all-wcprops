@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ntop/!svn/ver/5416/trunk/PF_RING/drivers/DNA/igb-3.4.7-DNA/scripts
+END
+set_irq_affinity.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ntop/!svn/ver/5416/trunk/PF_RING/drivers/DNA/igb-3.4.7-DNA/scripts/set_irq_affinity.sh
+END

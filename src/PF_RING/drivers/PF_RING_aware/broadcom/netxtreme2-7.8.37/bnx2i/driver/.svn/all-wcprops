@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver
+END
+bnx2i_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i_init.c
+END
+57xx_iscsi_constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/57xx_iscsi_constants.h
+END
+bnx2i.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i.h
+END
+bnx2i_hwi.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i_hwi.c
+END
+bnx2i_sysfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i_sysfs.c
+END
+bnx2i_compat.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i_compat.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/Makefile
+END
+bnx2i_iscsi.c
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i_iscsi.c
+END
+57xx_iscsi_hsi.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/57xx_iscsi_hsi.h
+END
+bnx2i_ioctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ntop/!svn/ver/6807/trunk/PF_RING/drivers/PF_RING_aware/broadcom/netxtreme2-7.8.37/bnx2i-2.7.8.1d/driver/bnx2i_ioctl.h
+END

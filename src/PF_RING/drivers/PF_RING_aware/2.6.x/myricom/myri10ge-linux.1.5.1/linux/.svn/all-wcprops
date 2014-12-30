@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/VERSION
+END
+msixbind.sh
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/msixbind.sh
+END
+myri10ge_hal.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/myri10ge_hal.h
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/CHANGES
+END
+Module.markers
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/Module.markers
+END
+inet_lro.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/inet_lro.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/README
+END
+myri10ge.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/myri10ge.c
+END
+myri10ge_rx_skbs.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/myri10ge_rx_skbs.h
+END
+myri10ge_bugreport.sh
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/myri10ge_bugreport.sh
+END
+check_headers.sh
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/check_headers.sh
+END
+inet_lro.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/inet_lro.h
+END
+make_version
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/myricom/myri10ge-linux.1.5.1/linux/make_version
+END

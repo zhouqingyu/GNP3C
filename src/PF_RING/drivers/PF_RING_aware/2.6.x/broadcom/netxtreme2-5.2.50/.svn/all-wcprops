@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50
+END
+sles11
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/sles11
+END
+bnx2
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/Makefile
+END
+bnx2x
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/bnx2x
+END
+current
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/current
+END
+INSTALL.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ntop/!svn/ver/5054/trunk/PF_RING/drivers/PF_RING_aware/2.6.x/broadcom/netxtreme2-5.2.50/INSTALL.TXT
+END

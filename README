@@ -1,0 +1,71 @@
+Version 1.1 更新说明：
+    pcre更新为8.33版本
+    PF_RING更新，API有所变化
+    src/packet.c中pfring_open参数改变,第三个参数为flag
+
+安装环境： 操作系统为 Ubuntu 12.04
+
+一、	Web服务器的安装 
+1.安装apache2.0 
+~$ sudo apt-get install apache2 
+
+2.安装PHP 
+~$ sudo apt-get install php5 
+~$ sudo apt-get install libapache2-mod-php5 
+
+3.安装MYSQL 
+~$ sudo apt-get install mysql-server 
+设置数据库密码：123456 
+~$ sudo apt-get install libmysqlclient-dev 
+
+4.让apache、php支持 mysql 
+~$ sudo apt-get install libapache2-mod-auth-mysql 
+~$ sudo apt-get install php5-mysql 
+~$ sudo /etc/init.d/apache2 restart 
+
+二、监控系统的安装 
+
+1.为避免部分安装中可能出现的错误，建议先安装如下的库或命令 
+~$ sudo apt-get install flex 
+~$ sudo apt-get install bison 
+~$ sudo apt-get install libssh-dev 
+~$ sudo apt-get install g++
+~$ sudo apt-get install gtk+-2.0
+
+2.系统安装，进入 ~/GNP3C目录 
+~/GNP3C$ make 
+~/GNP3C$ sudo make install 
+~/GNP3C$ sudo ldconfig
+
+3.Web界面安装，进入~/GNP3C/src/UI目录 
+将目录下所有文件拷贝至apache默认的工作目录( /var/www )下。 
+~/GNP3C/src/UI$ sudo cp * /var/www 
+
+4.导入数据库文件 由终端进入数据库 
+~$ mysql –uroot –p 
+建立名为network_monitor的数据库，并使用 
+mysql> create database network_monitor 
+mysql> use network_monitor 
+将~/GNP3C/目录下的data_structure.sql文件导入数据库 
+mysql> source （GNP3C所在路径）/GNP3C/data_structure.sql 
+
+三、配置文件 
+1.系统运行前需配置一些参数，如数据库的帐户名、密码和监听网卡等。 
+在~/GNP3C/src/configuration.file文件中可配置相关参数，现默认： 
+数据库主机地址:	127.0.0.1 
+数据库账户名:	root 
+数据库密码及:	123456 
+使用的数据库:	network_monitor 
+监听网卡:		eth0 
+
+四、运行系统 进入~GNP3C/src目录 
+1.加载pf_ring模块 
+~GNP3C/src$	sudo sh mod.sh 
+
+2.运行二进制文件 
+~GNP3C/src$	sudo ./GNP3C 
+
+3.用户界面 
+打开浏览器输入 http://localhost/login 将会出现如下登录界面
+
+

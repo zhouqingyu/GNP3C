@@ -1,0 +1,17 @@
+
+This directory contains:
+
+kernel/				Kernel related patches
+userland/			User space code
+userland/lib/			User space library used to manpulate PF_RING
+userland/libpcap-XXX-ring/	Libpcap enhanced with PF_RING support
+userland/examples/		P(acket)count application (use it for your tests)
+userland/snort/			Snort DAQ module for using snort over PF_RING
+
+NOTE
+As of PF_RING 4.x you NO LONGER NEED to patch the linux kernel. If you are using
+a patched kernel, please revert the patch otherwise you will capture the same
+packet twice
+
+---------------------
+(C) Luca Deri 2004-12

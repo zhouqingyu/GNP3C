@@ -1,0 +1,38 @@
+#!/bin/sh
+#ifup-local script specific for SLES
+
+dev=$1
+if [ -f /etc/redhat-release ]
+then
+    desc_dev=`/sbin/ethtool -i $dev 2>&1 | grep -c cxgb3`
+    if [ $desc_dev == 0 ]; then
+	exit
+    fi
+    if [ ! -e /etc/modprobe.conf ]; then
+            echo "alias $dev cxgb3" > /etc/modprobe.conf
+    else
+           in_mod=`grep -c $dev /etc/modprobe.conf`
+           if [ $in_mod == 0 ]; then
+                   echo "alias $dev cxgb3" >> /etc/modprobe.conf
+           fi
+    fi
+    # Load TOM
+    /sbin/modprobe t3_tom
+    # Run perftune
+    /sbin/perftune.sh -Ixqq
+elif [ -f /etc/SuSE-release ]
+then
+    echo "Running ifup-local for device $dev"
+    if [ ! -e /etc/modprobe.conf.local ]; then
+            echo "alias $dev cxgb3" > /etc/modprobe.conf.local
+    else
+           in_mod=`grep -c $dev /etc/modprobe.conf.local`
+           if [ $in_mod == 0 ]; then
+                   echo "alias $dev cxgb3" >> /etc/modprobe.conf.local
+           fi
+    fi
+    # Load TOM
+    /sbin/modprobe t3_tom
+    # Run perftune
+    /sbin/perftune.sh -xqq
+fi
